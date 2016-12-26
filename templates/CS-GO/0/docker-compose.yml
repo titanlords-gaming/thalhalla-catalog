@@ -1,4 +1,4 @@
-rabbitmq:
+steamer:
   image: thalhalla/steamer
   labels:
     io.rancher.container.hostname_override: container_name
