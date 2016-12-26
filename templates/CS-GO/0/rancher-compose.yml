@@ -1,0 +1,9 @@
+.catalog:
+  name: "Steamer"
+  version: "0.1.0"
+  decription: A reliable steam server
+steamer:
+  metadata:
+    steamer:
+      config:
+       node.name: "$${HOSTNAME}"
