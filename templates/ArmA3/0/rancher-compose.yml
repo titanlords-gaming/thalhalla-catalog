@@ -2,27 +2,6 @@
   name: "dockarmaiii"
   version: "0.0.1"
   decription: A reliable ArmA3 Dedicated steam server
-questions:
-    - variable: "Steam Username"
-      description: "Username from steam to use for the server"
-      label: "username:"
-      required: true
-      default: "Anonymous"
-      type: "string"
-    - variable: "Steam Password"
-      description: "Password from steam to use for the server"
-      label: "password:"
-      required: true
-      default: "xxxx"
-      type: "string"
-    - variable: "Steam Game ID"
-      description: "App ID or GID from steam to use for the server"
-      label: "gid:"
-      required: true
-      default: "233780"
-      type: "string"
-
-
 dockarmaiii:
   metadata:
     dockarmaiii:
