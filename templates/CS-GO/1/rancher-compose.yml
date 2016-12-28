@@ -2,13 +2,13 @@
   name: "steamer"
   version: "0.2.0"
   decription: A reliable CS:GO steam server
-questions:
-    - variable: "Steam Username"
-      description: "Username from steam to use for the server"
-      label: "username:"
-      required: true
-      default: "Anonymous"
-      type: "string"
+  questions:
+      - variable: "Steam Username"
+        description: "Username from steam to use for the server"
+        label: "username:"
+        required: true
+        default: "Anonymous"
+        type: "string"
 
 steamer:
   metadata:
