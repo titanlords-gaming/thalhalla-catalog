@@ -2,6 +2,31 @@
   name: "steamer"
   version: "0.1.0"
   decription: A reliable CS:GO steam server
+  questions:
+      - variable: "STEAM_USERNAME"
+        description: "Username from steam to use for the server"
+        label: "Steam Username"
+        required: true
+        default: "Anonymous"
+        type: "string"
+      - variable: "STEAM_PASSWORD"
+        description: "Password from steam to use for the server"
+        label: "Steam Password"
+        required: true
+        default: "xxxx"
+        type: "string"
+      - variable: "STEAM_GID"
+        description: "App ID or GID from steam to use for the server"
+        label: "Steam Game ID"
+        required: true
+        default: "440"
+        type: "string"
+      - variable: "STEAM_GSLT"
+        description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here -> http://steamcommunity.com/dev/managegameservers]"
+        label: "Steam Game Server Login Token"
+        required: true
+        default: "440"
+        type: "string"
 steamer:
   metadata:
     steamer:
