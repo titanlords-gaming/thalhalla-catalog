@@ -25,7 +25,7 @@
         description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here -> http://steamcommunity.com/dev/managegameservers]"
         label: "Steam Game Server Login Token"
         required: true
-        default: "440"
+        default: "REPLACE_ME"
         type: "string"
 steamer:
   metadata:
