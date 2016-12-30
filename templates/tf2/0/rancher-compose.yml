@@ -59,12 +59,6 @@
         required: true
         default: "Team_Fortress_2"
         type: "string"
-      - variable: "IP"
-        description: "IP to associate with this server)"
-        label: "IP"
-        required: true
-        default: "0.0.0.0"
-        type: "string"
       - variable: "PORT"
         description: "PORT to associate with this server)"
         label: "PORT"
