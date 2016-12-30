@@ -71,7 +71,3 @@
         required: true
         default: "27015"
         type: "string"
-
-
-	--env TF2_PASSWORD=$(TF2_PASSWORD) \
-	--env TF2_MOTD_URL=$(TF2_MOTD_URL) \
