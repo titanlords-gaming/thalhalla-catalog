@@ -21,7 +21,7 @@
         description: "App ID or GID from steam to use for the server"
         label: "Steam Game ID"
         required: true
-        default: "440"
+        default: "232250"
         type: "string"
       - variable: "STEAM_GSLT"
         description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here -> http://steamcommunity.com/dev/managegameservers]"
