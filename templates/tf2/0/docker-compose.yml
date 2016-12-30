@@ -1,5 +1,16 @@
 tf2:
   image: thalhalla/tf2
+  environment:
+    STEAM_USERNAME: ${STEAM_USERNAME}
+    STEAM_PASSWORD: ${STEAM_PASSWORD}
+    STEAM_GID: ${STEAM_GID}
+    STEAM_GSLT: ${STEAM_GSLT}
+    TF2_EXEC: ${TF2_EXEC}
+    TF2_MOTD_URL: ${TF2_MOTD_URL}
+    TF2_PASSWORD: ${TF2_PASSWORD}
+    TF2_MAIL: ${TF2_MAIL}
+    TF2_HOSTNAME: ${TF2_HOSTNAME}
+    PORT: ${PORT}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: tf2-datavolume
@@ -8,8 +19,8 @@ tf2:
   ports:
     - "26901:26901/udp"
     - "27005:27005/udp"
-    - "27015:27015"
-    - "27015:27015/udp"
+    - "${PORT}:${PORT}"
+    - "${PORT}:${PORT}/udp"
     - "27020:27020/udp"
 tf2-datavolume:
   labels:
