@@ -1,8 +1,7 @@
-name: # Name of the Catalog Entry
-description: |
-  # Description of the Catalog Entry
-version: 1.1.1
+name: Team Fortress 2
+description: Rancher Team Fortress 2 dedicated server
+version: 0.1.0
 category: Thalhalla Game Servers
-maintainer: # The maintainer of the catalog entry
-license: # The license
-projectURL: # A URL related to the catalog entry
+maintainer: josh@webhosting.coop
+license: GPLv3
+projectURL: https://github.com/Thalhalla/tf2
