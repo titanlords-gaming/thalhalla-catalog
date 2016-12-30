@@ -27,7 +27,7 @@
         description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here -> http://steamcommunity.com/dev/managegameservers]"
         label: "Steam Game Server Login Token"
         required: true
-        default: "REPLACE_ME"
+        default: "REPLACEME"
         type: "string"
       - variable: "TF2_EXEC"
         description: "Which server config to execute from the cfg folder (e.g. server_competitive.cfg"
@@ -51,13 +51,13 @@
         description: "email address to associate with this server"
         label: "Email"
         required: true
-        default: "admin@example.com"
+        default: "admin@thalhalla.com"
         type: "string"
       - variable: "TF2_HOSTNAME"
         description: "Server name to associate with this server"
         label: "Servername"
         required: true
-        default: "Team_Fortress_2"
+        default: "Thalhalla.com-rent-a-server"
         type: "string"
       - variable: "PORT"
         description: "PORT to associate with this server)"
