@@ -22,5 +22,6 @@ tf2-datavolume:
     - /home/steam/Steam
     - /home/steam/SteamLibrary
     - /home/steam/serverfiles
+    - /home/steam/log
   entrypoint: /bin/true
   image: busybox
