@@ -37,13 +37,13 @@
         type: "string"
       - variable: "TF2_MOTD_URL"
         description: "give an URL to your MOTD"
-        label: "Server Config"
+        label: "MOTD"
         required: true
         default: "https://raw.githubusercontent.com/Thalhalla/tf2/master/assets/motd.txt"
         type: "string"
       - variable: "TF2_PASSWORD"
         description: "Which server password for admin"
-        label: "Server Config"
+        label: "Admin password"
         required: true
         default: "REPLACE_ME"
         type: "string"
