@@ -5,6 +5,13 @@ tf2:
     io.rancher.sidekicks: tf2-datavolume
   volumes_from:
     - tf2-datavolume
+ports:
+  - "26901:26901/udp"
+  - "27005:27005/udp"
+  - "27015:27015"
+  - "27015:27015/udp"
+  - "27020:27020/udp"
+
 tf2-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
