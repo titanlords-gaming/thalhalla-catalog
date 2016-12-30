@@ -54,7 +54,7 @@
         default: "admin@example.com"
         type: "string"
       - variable: "TF2_HOSTNAME"
-        description: "Server name to associate with this server)"
+        description: "Server name to associate with this serverr"
         label: "Servername"
         required: true
         default: "Team_Fortress_2"
