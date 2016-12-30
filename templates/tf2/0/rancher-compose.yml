@@ -30,7 +30,7 @@
         default: "REPLACE_ME"
         type: "string"
       - variable: "TF2_EXEC"
-        description: "Which server config to execute from the cfg folder (e.g. server_competitive.cfg)"
+        description: "Which server config to execute from the cfg folder (e.g. server_competitive.cfg"
         label: "Server Config"
         required: true
         default: "server_competitive.cfg"
@@ -48,13 +48,13 @@
         default: "REPLACE_ME"
         type: "string"
       - variable: "TF2_MAIL"
-        description: "email address to associate with this server)"
+        description: "email address to associate with this server"
         label: "Email"
         required: true
         default: "admin@example.com"
         type: "string"
       - variable: "TF2_HOSTNAME"
-        description: "Server name to associate with this serverr"
+        description: "Server name to associate with this server"
         label: "Servername"
         required: true
         default: "Team_Fortress_2"
