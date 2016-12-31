@@ -16,7 +16,7 @@
         default: "xxxx"
         type: "string"
       - variable: "STEAM_GSLT"
-      description: "The Steam Game Server Login Token (GLST) from steam to use for the server [hint: go here -> http://steamcommunity.com/dev/managegameservers>here ]"
+      description: "The Steam Game Server Login Token (GLST) from steam to use for the server [hint: go here (use GID 730) -> http://steamcommunity.com/dev/managegameservers>here ]"
         label: "Steam Game Server Login Token"
         required: true
         default: "REPLACE_ME"
