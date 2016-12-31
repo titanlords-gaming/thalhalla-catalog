@@ -10,7 +10,7 @@ tf2:
     TF2_PASSWORD: ${TF2_PASSWORD}
     TF2_MAIL: ${TF2_MAIL}
     TF2_HOSTNAME: ${TF2_HOSTNAME}
-    PORT: ${PORT}
+    PORT: 27015
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: tf2-datavolume
