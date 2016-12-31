@@ -6,6 +6,10 @@ csgo:
     STEAM_GID: ${STEAM_GID}
     STEAM_GSLT: ${STEAM_GSLT}
     PORT: ${PORT}
+    CS_GAME_TYPE: ${CS_GAME_TYPE}
+    CS_GAME_MODE: ${CS_GAME_MODE}
+    CS_MAP_GROUP: ${CS_MAP_GROUP}
+    CS_INITIAL_MAP: ${CS_INITIAL_MAP}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: csgo-datavolume

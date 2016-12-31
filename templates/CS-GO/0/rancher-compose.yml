@@ -22,7 +22,7 @@
         default: "440"
         type: "string"
       - variable: "STEAM_GSLT"
-        description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here -> http://steamcommunity.com/dev/managegameservers]"
+        description: "The Steam Game Server Login Token (GLST) from steam to use for the server [hint: go <a href=http://steamcommunity.com/dev/managegameservers>here</a> ]"
         label: "Steam Game Server Login Token"
         required: true
         default: "REPLACE_ME"
@@ -38,6 +38,30 @@
         label: "PORT"
         required: true
         default: "27015"
+        type: "string"
+      - variable: "CS_GAME_TYPE"
+        description: "Which CS:GO server game type to execute"
+        label: "Game Type"
+        required: true
+        default: "1"
+        type: "string"
+      - variable: "CS_GAME_MODE"
+        description: "Which CS:GO server game mode to execute"
+        label: "Game Mode"
+        required: true
+        default: "1"
+        type: "string"
+      - variable: "CS_MAP_GROUP"
+        description: "Which CS:GO server map group to execute"
+        label: "Map Group"
+        required: true
+        default: "1"
+        type: "string"
+      - variable: "CS_INITIAL_MAP"
+        description: "Which CS:GO server map group to execute"
+        label: "Initial Map"
+        required: true
+        default: "1"
         type: "string"
 steamer:
   metadata:
