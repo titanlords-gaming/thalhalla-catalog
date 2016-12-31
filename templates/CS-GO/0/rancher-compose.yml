@@ -27,12 +27,6 @@
         required: true
         default: "gamemode_cooperative.cfg"
         type: "string"
-      - variable: "PORT"
-        description: "PORT to associate with this server)"
-        label: "PORT"
-        required: true
-        default: "27015"
-        type: "string"
       - variable: "CS_GAME_TYPE"
         description: "Which CS:GO server game type to execute"
         label: "Game Type"
