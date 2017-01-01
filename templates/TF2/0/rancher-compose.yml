@@ -18,7 +18,7 @@
         default: ""
         type: "string"
       - variable: "STEAM_GSLT"
-        description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here (use GID 440) -> http://steamcommunity.com/dev/managegameservers]"
+        description: "The Steam Game Server Login Token (GSLT) from steam to use for the server [go here (use GID 440) -> http://steamcommunity.com/dev/managegameservers]"
         label: "Steam Game Server Login Token"
         required: true
         default: ""
