@@ -1,8 +1,8 @@
 .catalog:
   name: Team Fortress 2 dedicated server
-  version: aws-efs-0.1.0
+  version: "aws-efs-0.1.0"
   description:  Team Fortress 2 dedicated server in a rancher server
-  uuid: 0.1.0
+  uuid: 0.1.1
   minimum_rancher_version: 0.1.1
   questions:
       - variable: "STEAM_USERNAME"
