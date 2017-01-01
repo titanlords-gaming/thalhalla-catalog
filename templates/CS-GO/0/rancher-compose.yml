@@ -1,7 +1,7 @@
 .catalog:
   name: "steamer"
   version: "0.1.0"
-  decription: A reliable CS:GO steam server
+  decription: A reliable CS-GO steam server
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -28,25 +28,25 @@
         default: "gamemode_cooperative.cfg"
         type: "string"
       - variable: "CS_GAME_TYPE"
-        description: "Which CS:GO server game type to execute"
+        description: "Which CS-GO server game type to execute"
         label: "Game Type"
         required: true
         default: "1"
         type: "string"
       - variable: "CS_GAME_MODE"
-        description: "Which CS:GO server game mode to execute"
+        description: "Which CS-GO server game mode to execute"
         label: "Game Mode"
         required: true
         default: "1"
         type: "string"
       - variable: "CS_MAP_GROUP"
-        description: "Which CS:GO server map group to execute"
+        description: "Which CS-GO server map group to execute"
         label: "Map Group"
         required: true
         default: "mg_demolition"
         type: "string"
       - variable: "CS_INITIAL_MAP"
-        description: "Which CS:GO server map group to execute"
+        description: "Which CS-GO server map initially to execute"
         label: "Initial Map"
         required: true
         default: "de_lake"
