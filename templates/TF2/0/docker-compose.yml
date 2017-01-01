@@ -19,8 +19,8 @@ tf2:
   ports:
     - "26901:26901/udp"
     - "27005:27005/udp"
-    - "${PORT}:${PORT}"
-    - "${PORT}:${PORT}/udp"
+    - "27015:27015"
+    - "27015:27015/udp"
     - "27020:27020/udp"
 tf2-datavolume:
   labels:
