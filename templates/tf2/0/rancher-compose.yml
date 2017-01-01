@@ -14,14 +14,14 @@
       - variable: "STEAM_PASSWORD"
         description: "Password from steam to use for the server"
         label: "Steam Password"
-        required: true
-        default: "xxxx"
+        required: false
+        default: ""
         type: "string"
       - variable: "STEAM_GSLT"
         description: "The Steam Game Server Login Token (GLST) from steam to use for the server [go here (use GID 440) -> http://steamcommunity.com/dev/managegameservers]"
         label: "Steam Game Server Login Token"
         required: true
-        default: "REPLACEME"
+        default: ""
         type: "string"
       - variable: "TF2_EXEC"
         description: "Which server config to execute from the cfg folder (e.g. server_competitive.cfg"
@@ -39,7 +39,7 @@
         description: "Which server password for admin"
         label: "Admin password"
         required: true
-        default: "REPLACE_ME"
+        default: ""
         type: "string"
       - variable: "TF2_MAIL"
         description: "email address to associate with this server"
