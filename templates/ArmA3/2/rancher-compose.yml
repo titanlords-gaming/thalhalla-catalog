@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.2.1-aws-efs"
+  version: "0.2.2-aws-efs"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"

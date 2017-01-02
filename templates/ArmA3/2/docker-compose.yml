@@ -29,12 +29,12 @@ dockarmaiii-datavolume:
     io.rancher.container.start_once: true
   volume_driver: convoy-efs
   volumes:
-    - CSGO:/home/steam/.steam
-    - CSGO:/home/steam/.local
-    - CSGO:/home/steam/steamcmd
-    - CSGO:/home/steam/Steam
-    - CSGO:/home/steam/SteamLibrary
-    - CSGO:/home/steam/serverfiles
-    - CSGO:/home/steam/log
+    - ARMA3:/home/steam/.steam
+    - ARMA3:/home/steam/.local
+    - ARMA3:/home/steam/steamcmd
+    - ARMA3:/home/steam/Steam
+    - ARMA3:/home/steam/SteamLibrary
+    - ARMA3:/home/steam/serverfiles
+    - ARMA3:/home/steam/log
   entrypoint: /bin/true
   image: busybox
