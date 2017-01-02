@@ -14,7 +14,7 @@
         label: "Steam Password"
         required: true
         default: ""
-        type: "string"
+        type: "password"
       - variable: "STEAM_GID"
         description: "App ID or GID from steam to use for the server"
         label: "Steam Game ID"
@@ -55,7 +55,7 @@
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
         label: "VOLUME Driver"
         required: true
-        default: "2305"
+        default: "convoy-nfs"
         type: "string"
 dockarmaiii:
   metadata:
