@@ -6,9 +6,9 @@ dockarmaiii:
     STEAM_GID: 233780
     IP: ${IP}
     PORT: ${PORT}
-    PORT1: ${PORT1}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
+    PORT4: ${PORT4}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dockarmaiii-datavolume
