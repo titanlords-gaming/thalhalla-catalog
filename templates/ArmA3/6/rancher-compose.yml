@@ -52,7 +52,7 @@
         default: "2305"
         type: "string"
       - variable: "VOLUME_DRIVER"
-      description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
         label: "VOLUME Driver"
         required: true
         default: "2305"
