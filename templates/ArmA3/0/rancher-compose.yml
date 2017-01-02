@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.0.1"
+  version: "0.1.1"
   decription: A reliable ArmA3 Dedicated steam server
 dockarmaiii:
   metadata:

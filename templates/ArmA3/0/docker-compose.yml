@@ -26,5 +26,6 @@ dockarmaiii-datavolume:
     - /home/steam/SteamLibrary
     - /home/steam/serverfiles
     - /home/steam/log
+    - /home/steam/lgsm
   entrypoint: /bin/true
   image: busybox
