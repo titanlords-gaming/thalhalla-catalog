@@ -1,5 +1,14 @@
 dockarmaiii:
   image: thalhalla/dockarmaiii
+  environment:
+    STEAM_USERNAME: ${STEAM_USERNAME}
+    STEAM_PASSWORD: ${STEAM_PASSWORD}
+    STEAM_GID: 233780
+    IP: ${IP}
+    PORT: ${PORT}
+    PORT2: ${PORT2}
+    PORT3: ${PORT3}
+    PORT4: ${PORT4}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dockarmaiii-datavolume
