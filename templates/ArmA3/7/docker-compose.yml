@@ -1,0 +1,34 @@
+dockarmaiii:
+  image: thalhalla/dockarmaiii
+  environment:
+    STEAM_USERNAME: ${STEAM_USERNAME}
+    STEAM_PASSWORD: ${STEAM_PASSWORD}
+    STEAM_GID: 233780
+    IP: ${IP}
+    PORT: ${PORT}
+    PORT2: ${PORT2}
+    PORT3: ${PORT3}
+    PORT4: ${PORT4}
+  labels:
+    io.rancher.container.hostname_override: container_name
+    io.rancher.sidekicks: dockarmaiii-datavolume
+  volumes_from:
+    - dockarmaiii-datavolume
+  ports:
+    - "${PORT}:${PORT}/udp"
+    - "2303:2303/udp"
+    - "2304:2304/udp"
+    - "2305:2305/udp"
+    - "2344:2344/udp"
+    - "2345:2345/udp"
+    - "2344:2344"
+    - "2345:2345"
+dockarmaiii-datavolume:
+  labels:
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.start_once: true
+  volume_driver: ${VOLUME_DRIVER}
+  volumes:
+    - ${VOLUME_NAME}:/home/steam/
+  entrypoint: /bin/true
+  image: busybox

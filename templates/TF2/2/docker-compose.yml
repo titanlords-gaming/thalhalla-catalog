@@ -28,12 +28,6 @@ tf2-datavolume:
     io.rancher.container.start_once: true
   volume_driver: ${VOLUME_DRIVER}
   volumes:
-    - ${VOLUME_NAME}:/home/steam/.steam
-    - ${VOLUME_NAME}:/home/steam/.local
-    - ${VOLUME_NAME}:/home/steam/steamcmd
-    - ${VOLUME_NAME}:/home/steam/Steam
-    - ${VOLUME_NAME}:/home/steam/SteamLibrary
-    - ${VOLUME_NAME}:/home/steam/serverfiles
-    - ${VOLUME_NAME}:/home/steam/log
+    - ${VOLUME_NAME}:/home/steam
   entrypoint: /bin/true
   image: busybox
