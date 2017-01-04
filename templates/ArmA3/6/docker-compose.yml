@@ -29,6 +29,6 @@ dockarmaiii-datavolume:
     io.rancher.container.start_once: true
   volume_driver: ${VOLUME_DRIVER}
   volumes:
-    - ARMA3:/home/steam/
+    - ${VOLUME_NAME}:/home/steam/
   entrypoint: /bin/true
   image: busybox

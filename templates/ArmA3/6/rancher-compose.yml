@@ -57,6 +57,12 @@
         required: true
         default: "convoy-nfs"
         type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "ARMA3"
+        type: "string"
 dockarmaiii:
   metadata:
     dockarmaiii:
