@@ -31,4 +31,4 @@ dockarmaiii-datavolume:
   volumes:
     - ${VOLUME_NAME}:/home/steam
   image: thalhalla/dockarmaiii
-  cmd: /bin/true
+  command: /bin/true
