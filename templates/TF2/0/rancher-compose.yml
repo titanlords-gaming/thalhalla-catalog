@@ -1,8 +1,8 @@
 .catalog:
   name: Team Fortress 2 dedicated server
-  version: 0.1.0
+  version: "0.3.0"
   description:  Team Fortress 2 dedicated server in a rancher server
-  uuid: 0.1.0
+  uuid: 0.1.1
   minimum_rancher_version: 0.1.1
   questions:
       - variable: "STEAM_USERNAME"
@@ -52,4 +52,16 @@
         label: "Servername"
         required: true
         default: "Thalhalla.com-rent-a-server"
+        type: "string"
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "TF2"
         type: "string"
