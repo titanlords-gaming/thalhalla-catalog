@@ -7,7 +7,7 @@
         description: "Username from steam to use for the server"
         label: "Steam Username"
         required: true
-        default: "Anonymous"
+        default: "anonymous"
         type: "string"
       - variable: "STEAM_PASSWORD"
         description: "Password from steam to use for the server"
