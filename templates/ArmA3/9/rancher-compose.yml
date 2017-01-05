@@ -63,13 +63,13 @@
         required: true
         default: "ARMA3"
         type: "string"
-      - variable: "DOCKARMAII_COMMAND"
+      - variable: "DOCKARMAIII_COMMAND"
         description: "The command name to associate with this server"
         label: "command"
         required: true
         default: "/assets/start.sh"
         type: "string"
-      - variable: "DOCKARMAII_BRANCH"
+      - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
