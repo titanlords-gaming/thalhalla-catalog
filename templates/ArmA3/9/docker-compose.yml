@@ -31,5 +31,5 @@ dockarmaiii-datavolume:
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
-  image: thalhalla/dockarmaiii
+  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
   command: /bin/true
