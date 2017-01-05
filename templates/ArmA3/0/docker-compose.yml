@@ -1,5 +1,15 @@
 dockarmaiii:
-  image: thalhalla/dockarmaiii
+  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
+  command: ${DOCKARMAIII_COMMAND}
+  environment:
+    STEAM_USERNAME: ${STEAM_USERNAME}
+    STEAM_PASSWORD: ${STEAM_PASSWORD}
+    STEAM_GID: 233780
+    IP: ${IP}
+    PORT: ${PORT}
+    PORT2: ${PORT2}
+    PORT3: ${PORT3}
+    PORT4: ${PORT4}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dockarmaiii-datavolume
@@ -18,14 +28,8 @@ dockarmaiii-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+  volume_driver: ${VOLUME_DRIVER}
   volumes:
-    - /home/steam/.steam
-    - /home/steam/.local
-    - /home/steam/steamcmd
-    - /home/steam/Steam
-    - /home/steam/SteamLibrary
-    - /home/steam/serverfiles
-    - /home/steam/log
-    - /home/steam/lgsm
-  entrypoint: /bin/true
-  image: busybox
+    - ${VOLUME_NAME}:/home/steam
+  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
+  command: /bin/true
