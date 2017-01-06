@@ -91,7 +91,7 @@
         description: "The hostname to associate with this server"
         label: "HOSTNAME"
         required: true
-        default: "latest"
+        default: "Thalhalla.com-247-clusterfuster"
         type: "string"
 dockarmaiii:
   metadata:
