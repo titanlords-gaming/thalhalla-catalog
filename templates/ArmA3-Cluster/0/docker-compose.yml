@@ -10,8 +10,12 @@ dockarmaiii:
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
-    CLIENT_IP: 10.42.227.26
-    CLIENT_IP2: 10.42.227.25
+    CLIENT_IP: 10.42.227.21
+    CLIENT_IP2: 10.42.227.22
+    CLIENT_IP3: 10.42.227.23
+    CLIENT_IP4: 10.42.227.24
+    CLIENT_IP5: 10.42.227.25
+    CLIENT_IP6: 10.42.227.26
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.requested_ip: 10.42.227.27
@@ -36,8 +40,9 @@ dockarmaiiihc1:
     PORT3: ${PORT3}
     PORT4: ${PORT4}
     SERVER_IP: 10.42.227.27
+    SERVER_PORT: 2302
   labels:
-    io.rancher.container.requested_ip: 10.42.227.26
+    io.rancher.container.requested_ip: 10.42.227.21
     io.rancher.sidekicks: dockarmaiii-datavolume
   volumes_from:
     - dockarmaiii-datavolume
