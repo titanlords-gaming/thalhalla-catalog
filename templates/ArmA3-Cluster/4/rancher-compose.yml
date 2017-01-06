@@ -85,6 +85,12 @@
         description: "The mods to associate with this server"
         label: "MODS"
         required: true
+        default: ""
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The hostname to associate with this server"
+        label: "HOSTNAME"
+        required: true
         default: "latest"
         type: "string"
 dockarmaiii:
