@@ -15,12 +15,6 @@
         required: true
         default: ""
         type: "password"
-      - variable: "STEAM_GID"
-        description: "App ID or GID from steam to use for the server"
-        label: "Steam Game ID"
-        required: true
-        default: "233780"
-        type: "string"
       - variable: "PORT"
         description: "main PORT to associate with this server"
         label: "PORT"
