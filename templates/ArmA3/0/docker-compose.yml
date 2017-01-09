@@ -7,7 +7,7 @@ dockarmaiii:
     ADMIN_PASSWORD: ${ADMIN_PASSWORD}
     HOSTNAME: ${HOSTNAME}
     STEAM_GID: 233780
-    IP: ${IP}
+    IP: 0.0.0.0
     PORT: ${PORT}
     MODS: ${DOCKARMAIII_MODS}
   labels:
