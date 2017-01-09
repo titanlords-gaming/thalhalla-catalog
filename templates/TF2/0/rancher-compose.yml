@@ -40,7 +40,7 @@
         label: "Admin password"
         required: true
         default: ""
-        type: "string"
+        type: "password"
       - variable: "TF2_MAIL"
         description: "email address to associate with this server"
         label: "Email"
