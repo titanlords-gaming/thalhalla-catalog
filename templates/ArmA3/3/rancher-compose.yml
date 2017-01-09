@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.3.2lgsm"
+  version: "0.3.3valve"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -37,7 +37,7 @@
         description: "The command name to associate with this server"
         label: "command"
         required: true
-        default: "/assets/lgsm-run.sh"
+        default: "/assets/valve-run.sh"
         type: "string"
       - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
