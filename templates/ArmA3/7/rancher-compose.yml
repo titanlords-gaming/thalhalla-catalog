@@ -51,6 +51,12 @@
         required: true
         default: "Thalhalla.com-247-fustercluck"
         type: "string"
+      - variable: "MAX_PLAYERS"
+        description: "The max players to associate with this server"
+        label: "Max Players"
+        required: true
+        default: "64"
+        type: "string"
 dockarmaiii:
   metadata:
     dockarmaiii:
