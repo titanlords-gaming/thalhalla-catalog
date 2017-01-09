@@ -1,0 +1,6 @@
+.catalog:
+  name: Team Speak 3 dedicated server
+  version: "0.3.0"
+  description:  Team Speak 3 dedicated server in a rancher server
+  uuid: 0.1.1
+  minimum_rancher_version: 0.1.1
