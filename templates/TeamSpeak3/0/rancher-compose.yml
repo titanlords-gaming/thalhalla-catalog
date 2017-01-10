@@ -15,5 +15,5 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "TF2"
+        default: "TS3"
         type: "string"
