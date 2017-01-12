@@ -13,7 +13,7 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "ARMA3"
+        default: "DST"
         type: "string"
       - variable: "DONTSTARVETOGETHER_COMMAND"
         description: "The command name to associate with this server"
