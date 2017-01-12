@@ -10,10 +10,8 @@ dockarmaiii:
   volumes_from:
     - dontstarvewithfriends-datavolume
   ports:
-    - "${PORT}:${PORT}/udp"
-    - "2303:2303/udp"
-    - "2304:2304/udp"
-    - "2305:2305/udp"
+    - "10999:10999"
+    - "10999:10999/udp"
 dontstarvewithfriends-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
