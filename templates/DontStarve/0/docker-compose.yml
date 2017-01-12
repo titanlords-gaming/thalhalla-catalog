@@ -2,15 +2,8 @@ dockarmaiii:
   image: thalhalla/dontstarvewithfriends:${dontstarvewithfriends_BRANCH}
   command: ${DONTSTARVETOGETHER_COMMAND}
   environment:
-    STEAM_USERNAME: ${STEAM_USERNAME}
-    STEAM_PASSWORD: ${STEAM_PASSWORD}
-    ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-    HOSTNAME: ${HOSTNAME}
-    MAX_PLAYERS: ${MAX_PLAYERS}
     STEAM_GID: 233780
     IP: 0.0.0.0
-    PORT: ${PORT}
-    MODS: ${DONTSTARVETOGETHER_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dontstarvewithfriends-datavolume
@@ -26,15 +19,8 @@ dontstarvewithfriends-datavolume:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
   environment:
-    STEAM_USERNAME: ${STEAM_USERNAME}
-    STEAM_PASSWORD: ${STEAM_PASSWORD}
-    ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-    HOSTNAME: ${HOSTNAME}
-    MAX_PLAYERS: ${MAX_PLAYERS}
     STEAM_GID: 233780
     IP: 0.0.0.0
-    PORT: ${PORT}
-    MODS: ${DONTSTARVETOGETHER_MODS}
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
