@@ -1,0 +1,40 @@
+.catalog:
+  name: "dontstarvewithfriends"
+  version: "0.3.1"
+  decription: A reliable ArmA3 Dedicated steam server
+  questions:
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "ARMA3"
+        type: "string"
+      - variable: "DONTSTARVETOGETHER_COMMAND"
+        description: "The command name to associate with this server"
+        label: "command"
+        required: true
+        default: "/assets/lgsm-run.sh"
+        type: "string"
+      - variable: "DONTSTARVETOGETHER_BRANCH"
+        description: "The command name to associate with this server"
+        label: "BRANCH"
+        required: true
+        default: "latest"
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The name to associate with this server"
+        label: "ServerName"
+        required: true
+        default: "Thalhalla.com-247-dst"
+        type: "string"
+dontstarvewithfriends:
+  metadata:
+    dontstarvewithfriends:
+      config:
+       node.name: "$${HOSTNAME}"
