@@ -1,5 +1,5 @@
 dontstarvewithfriends:
-  image: thalhalla/dontstarvewithfriends:${dontstarvewithfriends_BRANCH}
+  image: thalhalla/dontstarvewithfriends:${DONTSTARVETOGETHER_BRANCH}
   command: ${DONTSTARVETOGETHER_COMMAND}
   environment:
     STEAM_GID: 233780
