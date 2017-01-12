@@ -24,6 +24,7 @@ dockarmaiii:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.requested_ip: 10.42.227.27
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
   ports:
@@ -49,6 +50,7 @@ dockarmaiiihc1:
   labels:
     io.rancher.container.requested_ip: 10.42.227.21
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc2:
@@ -69,6 +71,7 @@ dockarmaiiihc2:
   labels:
     io.rancher.container.requested_ip: 10.42.227.22
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc3:
@@ -89,6 +92,7 @@ dockarmaiiihc3:
   labels:
     io.rancher.container.requested_ip: 10.42.227.23
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc4:
@@ -109,6 +113,7 @@ dockarmaiiihc4:
   labels:
     io.rancher.container.requested_ip: 10.42.227.24
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc5:
@@ -129,6 +134,7 @@ dockarmaiiihc5:
   labels:
     io.rancher.container.requested_ip: 10.42.227.25
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc6:
@@ -149,6 +155,7 @@ dockarmaiiihc6:
   labels:
     io.rancher.container.requested_ip: 10.42.227.26
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiii-datavolume:

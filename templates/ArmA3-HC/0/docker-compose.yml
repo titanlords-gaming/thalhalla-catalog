@@ -10,12 +10,14 @@ dockarmaiiihc:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiiihc-datavolume
 dockarmaiiihc-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+    io.rancher.container.pull_image: always
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam

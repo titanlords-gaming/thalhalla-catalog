@@ -7,6 +7,7 @@ dontstarvewithfriends:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dontstarvewithfriends-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dontstarvewithfriends-datavolume
   ports:
@@ -16,6 +17,7 @@ dontstarvewithfriends-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+    io.rancher.container.pull_image: always
   environment:
     STEAM_GID: 233780
     IP: 0.0.0.0

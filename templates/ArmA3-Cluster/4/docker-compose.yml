@@ -23,6 +23,7 @@ dockarmaiii:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.requested_ip: 10.42.227.27
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
   ports:

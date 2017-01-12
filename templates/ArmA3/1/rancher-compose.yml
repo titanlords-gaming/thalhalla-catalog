@@ -1,7 +1,7 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.3.1"
-  decription: A reliable ArmA3 Dedicated steam server
+  version: "0.4.1"
+  decription: A reliable ArmA3 Dedicated steam server (Valve method)
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -12,6 +12,12 @@
       - variable: "STEAM_PASSWORD"
         description: "Password from steam to use for the server"
         label: "Steam Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "ADMIN_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Admin Password"
         required: true
         default: ""
         type: "password"
@@ -50,6 +56,12 @@
         label: "ServerName"
         required: true
         default: "Thalhalla.com-247-fustercluck"
+        type: "string"
+      - variable: "MAX_PLAYERS"
+        description: "The max players to associate with this server"
+        label: "Max Players"
+        required: true
+        default: "64"
         type: "string"
 dockarmaiii:
   metadata:

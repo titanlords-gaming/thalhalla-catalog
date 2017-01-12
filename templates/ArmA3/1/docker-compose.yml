@@ -6,6 +6,7 @@ dockarmaiii:
     STEAM_PASSWORD: ${STEAM_PASSWORD}
     ADMIN_PASSWORD: ${ADMIN_PASSWORD}
     HOSTNAME: ${HOSTNAME}
+    MAX_PLAYERS: ${MAX_PLAYERS}
     STEAM_GID: 233780
     IP: 0.0.0.0
     PORT: ${PORT}
@@ -13,6 +14,7 @@ dockarmaiii:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
   ports:
@@ -24,8 +26,19 @@ dockarmaiii-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+    io.rancher.container.pull_image: always
+  environment:
+    STEAM_USERNAME: ${STEAM_USERNAME}
+    STEAM_PASSWORD: ${STEAM_PASSWORD}
+    ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+    HOSTNAME: ${HOSTNAME}
+    MAX_PLAYERS: ${MAX_PLAYERS}
+    STEAM_GID: 233780
+    IP: 0.0.0.0
+    PORT: ${PORT}
+    MODS: ${DOCKARMAIII_MODS}
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
   image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
-  command: /assets/install.sh
+  command: /bin/true

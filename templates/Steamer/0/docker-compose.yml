@@ -13,6 +13,7 @@ csgo:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: csgo-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - csgo-datavolume
   ports:
@@ -25,6 +26,7 @@ csgo-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+    io.rancher.container.pull_image: always
   volumes:
     - /home/steam/.steam
     - /home/steam/.local

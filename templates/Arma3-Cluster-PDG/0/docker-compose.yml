@@ -24,6 +24,7 @@ dockarmaiiipdg:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.requested_ip: 10.42.227.27
     io.rancher.sidekicks: dockarmaiiipdg-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiiipdg-datavolume
   ports:
@@ -49,6 +50,7 @@ dockarmaiiipdghc1:
   labels:
     io.rancher.container.requested_ip: 10.42.227.21
     io.rancher.sidekicks: dockarmaiiipdg-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiiipdg-datavolume
 dockarmaiiipdghc2:
@@ -155,6 +157,7 @@ dockarmaiiipdg-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
+    io.rancher.container.pull_image: always
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
