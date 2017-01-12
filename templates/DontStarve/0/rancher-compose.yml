@@ -1,6 +1,6 @@
 .catalog:
   name: "dontstarvewithfriends"
-  version: "0.3.0"
+  version: "0.4.0"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "VOLUME_DRIVER"

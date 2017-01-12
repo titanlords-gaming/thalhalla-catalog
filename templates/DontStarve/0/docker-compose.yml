@@ -1,4 +1,4 @@
-dockarmaiii:
+dontstarvewithfriends:
   image: thalhalla/dontstarvewithfriends:${dontstarvewithfriends_BRANCH}
   command: ${DONTSTARVETOGETHER_COMMAND}
   environment:
