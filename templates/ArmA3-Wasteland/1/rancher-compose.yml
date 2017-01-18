@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.1.0"
+  version: "0.1.1"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -33,24 +33,6 @@
         required: true
         default: "2302"
         type: "string"
-      - variable: "PORT2"
-        description: "Steam query PORT to associate with this server"
-        label: "PORT2"
-        required: true
-        default: "2303"
-        type: "string"
-      - variable: "PORT3"
-        description: "Steam master PORT to associate with this server"
-        label: "PORT3"
-        required: true
-        default: "2304"
-        type: "string"
-      - variable: "PORT4"
-        description: "VON reserved PORT to associate with this server"
-        label: "PORT4"
-        required: true
-        default: "2305"
-        type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
         label: "VOLUME Driver"
@@ -63,17 +45,41 @@
         required: true
         default: "ARMA3"
         type: "string"
+      - variable: "GAME_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Game Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "ADMIN_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Admin Password"
+        required: true
+        default: ""
+        type: "password"
       - variable: "DOCKARMAIII_COMMAND"
         description: "The command name to associate with this server"
         label: "command"
         required: true
-        default: "/assets/start.sh"
+        default: "/assets/lgsm-start.sh"
         type: "string"
       - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
         default: "latest"
+        type: "string"
+      - variable: "DOCKARMAIII_MODS"
+        description: "The mods to associate with this server"
+        label: "MODS"
+        required: true
+        default: "@wasteland"
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The hostname to associate with this server"
+        label: "HOSTNAME"
+        required: true
+        default: "Thalhalla.com-247-clusterfuster"
         type: "string"
 dockarmaiii:
   metadata:
