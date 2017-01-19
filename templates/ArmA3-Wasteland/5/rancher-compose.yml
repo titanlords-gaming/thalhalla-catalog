@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.1.4"
+  version: "0.1.5"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -80,6 +80,12 @@
         label: "HOSTNAME"
         required: true
         default: "Thalhalla.com-247-WasteLand"
+        type: "string"
+      - variable: "MAX_PLAYERS"
+        description: "The max players to associate with this server"
+        label: "Max Players"
+        required: true
+        default: "64"
         type: "string"
 dockarmaiii:
   metadata:
