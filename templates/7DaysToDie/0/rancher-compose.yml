@@ -19,7 +19,7 @@
         description: "App ID or GID from steam to use for the server"
         label: "Steam Game ID"
         required: true
-        default: "233780"
+        default: "294420"
         type: "string"
       - variable: "IP"
         description: "IP to associate with this server"
@@ -28,10 +28,16 @@
         default: "0.0.0.0"
         type: "string"
       - variable: "PORT"
-        description: "VON PORT to associate with this server"
+        description: "Game PORT to associate with this server"
         label: "PORT"
         required: true
-        default: "2302"
+        default: "26900"
+        type: "string"
+      - variable: "PORT2"
+        description: "Secondary Game PORT to associate with this server"
+        label: "PORT2"
+        required: true
+        default: "26901"
         type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
@@ -43,7 +49,7 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "ARMA3"
+        default: "7DAYSTODIE"
         type: "string"
       - variable: "GAME_PASSWORD"
         description: "Admin Password to use for the server"
