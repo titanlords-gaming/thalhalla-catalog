@@ -21,6 +21,12 @@
         required: true
         default: "294420"
         type: "string"
+      - variable: "STEAM_FORCE_INSTALL"
+        description: "force_install_dir for steamer.txt indicating where to install the game files"
+        label: "Steam Force Install Dir"
+        required: true
+        default: "/home/steam/7DaysToDie"
+        type: "string"
       - variable: "IP"
         description: "IP to associate with this server"
         label: "IP"
