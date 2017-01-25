@@ -11,6 +11,7 @@
     STEAM_GID: 233780
     IP: ${IP}
     PORT: ${PORT}
+    PORT2: ${PORT2}
     CLIENT_IP: 10.42.227.77
     MODS: ${7DAYSTODIE_MODS}
   labels:
@@ -22,9 +23,8 @@
     - 7daystodie-datavolume
   ports:
     - "${PORT}:${PORT}/udp"
-    - "2303:2303/udp"
-    - "2304:2304/udp"
-    - "2305:2305/udp"
+    - "${PORT2}:${PORT2}/udp"
+
 7daystodie-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
