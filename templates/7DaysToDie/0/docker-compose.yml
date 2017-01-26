@@ -22,6 +22,8 @@
   ports:
     - "${PORT}:${PORT}/udp"
     - "${PORT2}:${PORT2}/udp"
+    - "10080:10080/tcp"
+    - "10081:10081/tcp"
 
 7daystodie-datavolume:
   labels:
