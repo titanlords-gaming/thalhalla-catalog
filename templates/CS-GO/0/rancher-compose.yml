@@ -1,6 +1,6 @@
 .catalog:
   name: "steamer"
-  version: "0.3.0"
+  version: "0.3.1"
   decription: A reliable CS-GO steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -62,6 +62,12 @@
         label: "VOLUME Name"
         required: true
         default: "CSGO"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
         type: "string"
 steamer:
   metadata:

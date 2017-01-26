@@ -12,6 +12,7 @@ csgo:
     CS_INITIAL_MAP: ${CS_INITIAL_MAP}
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.sidekicks: csgo-datavolume
     io.rancher.container.pull_image: always
   volumes_from:
@@ -25,6 +26,7 @@ csgo:
 csgo-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.container.start_once: true
     io.rancher.container.pull_image: always
   volume_driver: ${VOLUME_DRIVER}
