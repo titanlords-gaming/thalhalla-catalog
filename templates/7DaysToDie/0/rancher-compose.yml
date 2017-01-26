@@ -46,10 +46,16 @@
         default: "26901"
         type: "string"
       - variable: "PORT3"
-        description: "Secondary Game PORT to associate with this server"
+        description: "Tertiary Game PORT to associate with this server"
         label: "PORT3"
         required: true
         default: "26902"
+        type: "string"
+      - variable: "PORT4"
+        description: "Fourth Game PORT to associate with this server"
+        label: "PORT4"
+        required: true
+        default: "26903"
         type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
