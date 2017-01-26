@@ -1,6 +1,6 @@
 .catalog:
   name: Team Fortress 2 dedicated server
-  version: "0.3.0"
+  version: "0.3.1"
   description:  Team Fortress 2 dedicated server in a rancher server
   uuid: 0.1.1
   minimum_rancher_version: 0.1.1
@@ -64,4 +64,10 @@
         label: "VOLUME Name"
         required: true
         default: "TF2"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
         type: "string"
