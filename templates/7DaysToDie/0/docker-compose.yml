@@ -16,6 +16,7 @@
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: 7daystodie-datavolume
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.container.pull_image: always
   volumes_from:
     - 7daystodie-datavolume
@@ -29,6 +30,7 @@
 7daystodie-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.container.start_once: true
   volume_driver: ${VOLUME_DRIVER}
   volumes:

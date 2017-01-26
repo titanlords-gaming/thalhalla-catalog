@@ -105,6 +105,12 @@
         required: true
         default: "64"
         type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
+        type: "string"
 7daystodie:
   metadata:
     7daystodie:
