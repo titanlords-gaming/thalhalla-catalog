@@ -1,6 +1,6 @@
 .catalog:
   name: "dontstarvewithfriends"
-  version: "0.4.1"
+  version: "0.4.2"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "VOLUME_DRIVER"
@@ -32,6 +32,12 @@
         label: "ServerName"
         required: true
         default: "Thalhalla.com-247-dst"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
         type: "string"
 dontstarvewithfriends:
   metadata:
