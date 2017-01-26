@@ -12,11 +12,9 @@
     IP: ${IP}
     PORT: ${PORT}
     PORT2: ${PORT2}
-    CLIENT_IP: 10.42.227.77
     MODS: ${7DAYSTODIE_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.container.requested_ip: 10.42.227.77
     io.rancher.sidekicks: 7daystodie-datavolume
     io.rancher.container.pull_image: always
   volumes_from:
