@@ -24,8 +24,12 @@
     - 7daystodie-datavolume
   ports:
     - "${PORT}:${PORT}"
+    - "${PORT}:${PORT}/udp"
+    - "${PORT2}:${PORT2}"
     - "${PORT2}:${PORT2}/udp"
+    - "${PORT3}:${PORT3}"
     - "${PORT3}:${PORT3}/udp"
+    - "${PORT4}:${PORT4}"
     - "${PORT4}:${PORT4}/udp"
     - "10080:10080/tcp"
     - "10081:10081/tcp"
