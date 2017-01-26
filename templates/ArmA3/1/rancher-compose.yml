@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.4.1"
+  version: "0.4.2"
   decription: A reliable ArmA3 Dedicated steam server (Valve method)
   questions:
       - variable: "STEAM_USERNAME"
@@ -62,6 +62,12 @@
         label: "Max Players"
         required: true
         default: "64"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
         type: "string"
 dockarmaiii:
   metadata:

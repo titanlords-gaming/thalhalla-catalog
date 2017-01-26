@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.3.4"
+  version: "0.3.5"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -92,6 +92,12 @@
         label: "HOSTNAME"
         required: true
         default: "Thalhalla.com-247-clusterfuster"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run the pubic container service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
         type: "string"
 dockarmaiii:
   metadata:

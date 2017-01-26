@@ -13,6 +13,7 @@ dockarmaiii:
     MODS: ${DOCKARMAIII_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.sidekicks: dockarmaiii-datavolume
     io.rancher.container.pull_image: always
   volumes_from:
@@ -25,6 +26,7 @@ dockarmaiii:
 dockarmaiii-datavolume:
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.container.start_once: true
     io.rancher.container.pull_image: always
   environment:
