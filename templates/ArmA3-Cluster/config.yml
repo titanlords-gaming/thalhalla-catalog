@@ -1,5 +1,5 @@
-name: ARMA3
+name: ARMA3-Cluster
 description: |
   ARMA3 Dedicated Server cluster with headless clients
 version: 0.3.5
-category: Thalhalla Game Servers
+category: FPS

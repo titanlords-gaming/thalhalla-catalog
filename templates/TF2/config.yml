@@ -1,7 +1,7 @@
 name: Team Fortress 2
 description: Rancher Team Fortress 2 dedicated server
 version: 0.3.1
-category: Thalhalla Game Servers
+category: FPS
 maintainer: josh@webhosting.coop
 license: GPLv3
 projectURL: https://github.com/Thalhalla/tf2
