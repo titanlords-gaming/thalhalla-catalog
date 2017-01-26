@@ -1,6 +1,6 @@
 .catalog:
   name: "7daystodie"
-  version: "0.1.2"
+  version: "0.1.3"
   decription: A reliable 7 Days To Die Dedicated server
   questions:
       - variable: "STEAM_USERNAME"
