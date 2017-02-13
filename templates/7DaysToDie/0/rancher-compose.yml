@@ -40,19 +40,19 @@
         default: "26900"
         type: "string"
       - variable: "PORT2"
-        description: "Secondary Game PORT to associate with this server"
+        description: "Secondary Game PORT to associate with this server (gameport+1)"
         label: "PORT2"
         required: true
         default: "26901"
         type: "string"
       - variable: "PORT3"
-        description: "Tertiary Game PORT to associate with this server"
+        description: "Tertiary Game PORT to associate with this server (gameport+2)"
         label: "PORT3"
         required: true
         default: "26902"
         type: "string"
       - variable: "PORT4"
-        description: "Fourth Game PORT to associate with this server"
+        description: "Fourth Game PORT to associate with this server (gameport+3)"
         label: "PORT4"
         required: true
         default: "26903"
