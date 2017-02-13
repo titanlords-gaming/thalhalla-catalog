@@ -31,8 +31,6 @@
     - "${PORT3}:${PORT3}/udp"
     - "${PORT4}:${PORT4}"
     - "${PORT4}:${PORT4}/udp"
-    - "11080:10080"
-    - "11081:10081"
 
 7daystodie-datavolume:
   labels:
