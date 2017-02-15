@@ -51,11 +51,17 @@
         required: true
         default: "26902"
         type: "string"
-      - variable: "PORT4"
-        description: "Fourth Game PORT to associate with this server (gameport+3)"
-        label: "PORT4"
+      - variable: "CPORT1"
+        description: "Control Panel PORT for telnet access"
+        label: "CPORT1"
         required: true
-        default: "26903"
+        default: "8080"
+        type: "string"
+      - variable: "CPORT2"
+        description: "Secondary Control Panel PORT for telnet access"
+        label: "CPORT2"
+        required: true
+        default: "8081"
         type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
@@ -70,7 +76,7 @@
         default: "7DAYSTODIE"
         type: "string"
       - variable: "GAME_PASSWORD"
-        description: "Admin Password to use for the server"
+        description: "Game Password to use for the server"
         label: "Game Password"
         required: false
         default: ""
