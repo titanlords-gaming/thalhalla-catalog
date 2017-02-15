@@ -13,7 +13,8 @@
     PORT: ${PORT}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
-    PORT4: ${PORT4}
+    CPORT1: ${CPORT1}
+    CPORT2: ${CPORT2}
     MODS: ${7DAYSTODIE_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
@@ -29,8 +30,8 @@
     - "${PORT2}:26901/udp"
     - "${PORT3}:26902"
     - "${PORT3}:26902/udp"
-    - "${PORT4}:26903"
-    - "${PORT4}:26903/udp"
+    - "${CPORT1}:8080"
+    - "${CPORT2}:8081"
 
 7daystodie-datavolume:
   labels:
