@@ -90,7 +90,7 @@
       - variable: "DOCKARMAIII_MODS"
         description: "The mods to associate with this server"
         label: "MODS"
-        required: true
+        required: false
         default: ""
         type: "string"
       - variable: "DOCKARMAIII_SERVERMODS"
