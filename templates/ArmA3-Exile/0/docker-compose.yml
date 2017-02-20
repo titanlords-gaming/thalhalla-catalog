@@ -12,7 +12,7 @@ dockarmaiii:
     PORT: ${PORT}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
-    PORT3: ${PORT4}
+    PORT4: ${PORT4}
     MODS: ${DOCKARMAIII_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
