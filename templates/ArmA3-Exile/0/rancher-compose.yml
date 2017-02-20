@@ -91,6 +91,12 @@
         description: "The mods to associate with this server"
         label: "MODS"
         required: true
+        default: ""
+        type: "string"
+      - variable: "DOCKARMAIII_SERVERMODS"
+        description: "The server side only mods to associate with this server"
+        label: "SERVERMODS"
+        required: true
         default: "@ExileServer"
         type: "string"
       - variable: "HOSTNAME"

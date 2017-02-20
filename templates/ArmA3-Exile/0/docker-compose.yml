@@ -14,6 +14,7 @@ dockarmaiii:
     PORT3: ${PORT3}
     PORT4: ${PORT4}
     MODS: ${DOCKARMAIII_MODS}
+    SERVERMODS: ${DOCKARMAIII_SERVERMODS}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:host_label: ${host_label}
