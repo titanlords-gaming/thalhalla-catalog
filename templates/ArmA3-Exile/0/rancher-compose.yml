@@ -1,7 +1,7 @@
 .catalog:
-  name: "7daystodie"
-  version: "0.1.4"
-  decription: A reliable 7 Days To Die Dedicated server
+  name: "dockarmaiii"
+  version: "0.1.1"
+  decription: ARMA3 Exile Dedicated Server
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -19,13 +19,7 @@
         description: "App ID or GID from steam to use for the server"
         label: "Steam Game ID"
         required: true
-        default: "294420"
-        type: "string"
-      - variable: "STEAM_FORCE_INSTALL"
-        description: "force_install_dir for steamer.txt indicating where to install the game files"
-        label: "Steam Force Install Dir"
-        required: true
-        default: "/home/steam/7DaysToDie"
+        default: "233780"
         type: "string"
       - variable: "IP"
         description: "IP to associate with this server"
@@ -34,34 +28,28 @@
         default: "0.0.0.0"
         type: "string"
       - variable: "PORT"
-        description: "Game PORT to associate with this server"
+        description: "VON PORT to associate with this server"
         label: "PORT"
         required: true
-        default: "26900"
+        default: "2302"
         type: "string"
       - variable: "PORT2"
         description: "Secondary Game PORT to associate with this server (gameport+1)"
         label: "PORT2"
         required: true
-        default: "26901"
+        default: "2303"
         type: "string"
       - variable: "PORT3"
         description: "Tertiary Game PORT to associate with this server (gameport+2)"
         label: "PORT3"
         required: true
-        default: "26902"
+        default: "2304"
         type: "string"
-      - variable: "CPORT1"
-        description: "Control Panel PORT for telnet access"
-        label: "CPORT1"
+      - variable: "PORT4"
+        description: "Tertiary Game PORT to associate with this server (gameport+3)"
+        label: "PORT4"
         required: true
-        default: "8080"
-        type: "string"
-      - variable: "CPORT2"
-        description: "Secondary Control Panel PORT for telnet access"
-        label: "CPORT2"
-        required: true
-        default: "8081"
+        default: "2305"
         type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
@@ -73,10 +61,10 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "7DAYSTODIE"
+        default: "ARMA3EXILE"
         type: "string"
       - variable: "GAME_PASSWORD"
-        description: "Game Password to use for the server"
+        description: "Admin Password to use for the server"
         label: "Game Password"
         required: false
         default: ""
@@ -87,29 +75,35 @@
         required: true
         default: ""
         type: "password"
-      - variable: "7DAYSTODIE_COMMAND"
+      - variable: "DOCKARMAIII_COMMAND"
         description: "The command name to associate with this server"
         label: "command"
         required: true
         default: "/assets/valve-run.sh"
         type: "string"
-      - variable: "7DAYSTODIE_BRANCH"
+      - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
         default: "latest"
         type: "string"
-      - variable: "7DAYSTODIE_MODS"
+      - variable: "DOCKARMAIII_MODS"
         description: "The mods to associate with this server"
         label: "MODS"
         required: false
         default: ""
         type: "string"
+      - variable: "DOCKARMAIII_SERVERMODS"
+        description: "The server side only mods to associate with this server"
+        label: "SERVERMODS"
+        required: true
+        default: "@ExileServer"
+        type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
         label: "HOSTNAME"
         required: true
-        default: "Thalhalla.com-247-Rand-PVP"
+        default: "Thalhalla.com-247-Exile"
         type: "string"
       - variable: "MAX_PLAYERS"
         description: "The max players to associate with this server"
@@ -123,8 +117,8 @@
         required: true
         default: "public=true"
         type: "string"
-7daystodie:
+dockarmaiii:
   metadata:
-    7daystodie:
+    dockarmaiii:
       config:
        node.name: "$${HOSTNAME}"
