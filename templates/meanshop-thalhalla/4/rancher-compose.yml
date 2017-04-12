@@ -1,9 +1,9 @@
 version: '2'
 catalog:
   name: "thalhalla-meanshop"
-  version: "0.6.6"
+  version: "0.6.7"
   description: "Thalhalla E-commerce powered by Meanshop"
-  uuid: thalhalla-meanshop-0
+  uuid: thalhallaextdb-meanshop-0
   minimum_rancher_version: v0.51.0
   questions:
       - variable: "MEANSHOP_HOST"
