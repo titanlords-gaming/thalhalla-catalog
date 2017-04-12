@@ -1,6 +1,6 @@
 .catalog:
   name: "thalshop"
-  version: "0.6.8"
+  version: "0.6.9"
   description: "Library service powered by Meanshop"
   uuid: thalshopextdb-0
   minimum_rancher_version: v0.51.0

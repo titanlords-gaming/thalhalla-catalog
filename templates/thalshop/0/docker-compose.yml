@@ -1,6 +1,6 @@
 version: '2'
 services:
-  meanshop-nginx:
+  thalhallashop-nginx:
     image: thalhalla/meanshop:thalhalla-nginx
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
@@ -16,7 +16,7 @@ services:
       NGINX_PORT: 80
     ports:
       - ${PORT}:80
-  meanshop-node:
+  thalhallashop-node:
     image: thalhalla/meanshop:thalhalla-alpine
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
