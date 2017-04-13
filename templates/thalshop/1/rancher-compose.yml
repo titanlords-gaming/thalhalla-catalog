@@ -1,7 +1,7 @@
 version: '3'
 catalog:
   name: "thalhalla-meanshop"
-  version: "0.7.2"
+  version: "0.7.3"
   description: "Thalhalla E-commerce powered by Meanshop"
   uuid: thalhallaextdb-meanshop-0
   minimum_rancher_version: v0.51.0
@@ -18,12 +18,6 @@ catalog:
         required: true
         default: "thalhalla.com"
         type: "string"
-      - variable: "MEANGO_DB"
-        description: "Mongo Database name to use for the Thalhalla store server"
-        label: "Mongo DB"
-        required: true
-        default: "thalhallashop"
-        type: "string"
       - variable: "NODE_TAG"
         description: "The Docker Tag for the node Thalhalla store server"
         label: "node tag"
@@ -35,6 +29,12 @@ catalog:
         label: "nginx tag"
         required: true
         default: "thalhalla/meanshop:production-nginx"
+        type: "string"
+      - variable: "MEANGO_DB"
+        description: "Mongo Database name to use for the Thalhalla store server"
+        label: "Mongo DB"
+        required: true
+        default: "thalhallashop"
         type: "string"
       - variable: "MEANGO_HOST"
         description: "Mongo Host to use for the Thalhalla store server"

@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "thalhalla-staging-meanshop"
-  version: "0.7.0"
+  version: "0.7.1"
   description: "Thalhalla E-commerce powered by Meanshop"
   uuid: thalhallaextdb-meanshop-0
   minimum_rancher_version: v0.51.0
