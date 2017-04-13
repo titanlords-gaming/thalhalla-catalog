@@ -1,7 +1,7 @@
 version: '2'
 services:
   thalhallashop-nginx:
-    image: thalhalla/meanshop:thalhalla-nginx
+    image: ${NGINX_TAG}
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.hostname_override: container_name
@@ -15,7 +15,7 @@ services:
       NGINX_HOST: ${MEANSHOP_HOST}.${MEANSHOP_DOMAIN}
       NGINX_PORT: 80
   thalhallashop-node:
-    image: thalhalla/meanshop:thalhalla-alpine
+    image: ${NODE_TAG}
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.pull_image: always

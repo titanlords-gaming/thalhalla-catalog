@@ -1,7 +1,7 @@
 version: '2'
 services:
   thalhallashop-nginx:
-    image: thalhalla/meanshop:thalhalla-nginx
+    image: thalhalla/meanshop:staging-nginx
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.hostname_override: container_name
@@ -14,14 +14,12 @@ services:
     environment:
       NGINX_HOST: ${MEANSHOP_HOST}.${MEANSHOP_DOMAIN}
       NGINX_PORT: 80
-    ports:
-      - ${PORT}:80
   thalhallashop-node:
-    image: thalhalla/meanshop:thalhalla-alpine
+    image: thalhalla/meanshop:staging-alpine
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.pull_image: always
     environment:
       MEANGO_DEBUG: ${MEANGO_DEBUG}
       PORT: 9000
-      MONGODB_DB_URL: "mongodb://${MEANGO_HOST}/meanshop"
+      MONGODB_DB_URL: "mongodb://${MEANGO_HOST}/${MEANGO_DB}"

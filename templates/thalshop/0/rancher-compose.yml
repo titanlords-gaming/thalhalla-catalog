@@ -1,33 +1,34 @@
-.catalog:
-  name: "thalshop"
-  version: "0.6.9"
-  description: "Library service powered by Meanshop"
-  uuid: thalshopextdb-0
+version: '2'
+catalog:
+  name: "thalhalla-staging-meanshop"
+  version: "0.7.0"
+  description: "Thalhalla E-commerce powered by Meanshop"
+  uuid: thalhallaextdb-meanshop-0
   minimum_rancher_version: v0.51.0
   questions:
       - variable: "MEANSHOP_HOST"
-        description: "Hostname to use for the MEANSHOP server"
-        label: "MEANSHOP Hostname"
+        description: "Hostname to use for the Thalhalla store"
+        label: "Thalhalla Store Hostname"
         required: true
-        default: "meanshop"
+        default: "store"
         type: "string"
       - variable: "MEANSHOP_DOMAIN"
-        description: "Domain to use for the MEANSHOP server"
+        description: "Domain to use for the Thalhalla store server"
         label: "MEANSHOP Domain"
         required: true
-        default: "example.com"
+        default: "thalhalla.com"
         type: "string"
-      - variable: "PORT"
-        description: "Port to use for the MEANSHOP server"
-        label: "MEANSHOP Port"
+      - variable: "MEANGO_DB"
+        description: "Mongo Database name to use for the Thalhalla store server"
+        label: "Mongo DB"
         required: true
-        default: "3547"
-        type: "int"
+        default: "thalhallashop"
+        type: "string"
       - variable: "MEANGO_HOST"
-        description: "Mongo Host to use for the MEANSHOP server"
+        description: "Mongo Host to use for the Thalhalla store server"
         label: "Mongo Host"
         required: true
-        default: "mymongo_host"
+        default: ""
         type: "string"
       - variable: "MEANGO_DEBUG"
         description: "include debug data in stdout"
@@ -38,15 +39,20 @@
         label: "Host Label to Meanshop Tags"
         description: |
           Host label to use as Meanshop 'value' tag.
-          Example: 'meanshop=true'
+          Example: 'thalhallashop=true'
         required: false
-        default: "meanshop=true"
+        default: "private=true"
         type: "string"
-
-thalhalla-nginx:
-  scale: 1
-  retain_ip: true
-
-thalhalla-node:
-  scale: 1
-  retain_ip: true
+services:
+  thalhallashop-nginx:
+    scale: 1
+    health_check:
+      port: 80
+      interval: 30000
+      initializing_timeout: 360000
+      unhealthy_threshold: 9
+      strategy: none
+      healthy_threshold: 2
+      response_timeout: 9000
+  thalhallashop-node:
+    scale: 1
