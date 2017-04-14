@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "thalhalla-meanshop-prod"
-  version: "0.7.6"
+  version: "0.7.7"
   description: "Thalhalla E-commerce powered by Meanshop"
   uuid: thalhallaextdb-meanshop-prod-0
   minimum_rancher_version: v0.51.0
@@ -34,18 +34,13 @@ catalog:
         description: "Mongo Database name to use for the Thalhalla store server"
         label: "Mongo DB"
         required: true
-        default: "thalhallashop"
+        default: "thalhallashop-prod01"
         type: "string"
       - variable: "MEANGO_HOST"
         description: "Mongo Host to use for the Thalhalla store server"
         label: "Mongo Host"
         required: true
         default: ""
-        type: "string"
-      - variable: "MEANGO_DEBUG"
-        description: "include debug data in stdout"
-        label: "debug"
-        required: false
         type: "string"
       - variable: host_label
         label: "Host Label to Meanshop Tags"

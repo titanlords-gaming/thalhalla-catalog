@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "thalhalla-meanshop-staging"
-  version: "0.7.6"
+  version: "0.7.7"
   description: "Thalhalla E-commerce powered by Meanshop"
   uuid: thalhallaextdb-meanshop-staging-0
   minimum_rancher_version: v0.51.0
@@ -34,7 +34,7 @@ catalog:
         description: "Mongo Database name to use for the Thalhalla store server"
         label: "Mongo DB"
         required: true
-        default: "thalhallashop"
+        default: "thalhallashop-staging"
         type: "string"
       - variable: "MEANGO_HOST"
         description: "Mongo Host to use for the Thalhalla store server"
