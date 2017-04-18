@@ -1,6 +1,6 @@
-name: Traefik-WHC
+name: Traefik-Thalhalla
 description: |
-  Traefik active load balancer with WHC defaults
+  Traefik active load balancer with Thalhalla defaults
 version: v1.1.2-rancher1-whc-1
 category: Load Balancing
 maintainer: "Josh Cox <josh@webhosting.coop>"
