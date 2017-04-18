@@ -1,11 +1,11 @@
 .catalog:
-  name: thalhalla-traefik
-  version: v1.1.2-rancher1
+  name: traefik
+  version: v1.1.2-rancher1-whc-1
   description: |
-    (Experimental) Traefik load balancer.
+    Traefik load balancer with defaults for the WHC
   minimum_rancher_version: v0.59.0
-  maintainer: " Josh Cox <uberthoth@gmail.com>"
-  uuid: thalhalla-traefik-0
+  maintainer: "Josh Cox <josh@webhosting.coop>"
+  uuid: traefik-0
   questions:
     - variable: "host_label"
       description: "Host label where to run traefik service."
@@ -52,7 +52,7 @@
       description: "ACME user email."
       label: "ACME email:"
       required: true
-      default: "admin@thalhalla.com"
+      default: "thaladmin@thalhalla.com"
       type: "string"
     - variable: "acme_ondemand"
       description: "Enable acme ondemand."
@@ -70,7 +70,7 @@
       description: "Interval to poll/apply configuration changes."
       label: "Refresh Interval (s):"
       required: true
-      default: 10
+      default: 30
       type: "int"
 traefik:
   retain_ip: true
@@ -81,9 +81,3 @@ traefik:
     request_line: 'GET /dashboard/# HTTP/1.0'
     healthy_threshold: 2
     response_timeout: 5000
-  metadata:
-    traefik:
-      ssl_key: |
-        ${ssl_key}
-      ssl_crt: |
-        ${ssl_crt}
