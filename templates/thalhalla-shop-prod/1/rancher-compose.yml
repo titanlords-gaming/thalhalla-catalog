@@ -42,16 +42,6 @@ catalog:
         required: true
         default: ""
         type: "string"
-      - variable: "NGINX_USER"
-        description: "include a basic auth user, leave this blank for no auth!"
-        label: "htuser"
-        required: false
-        type: "string"
-      - variable: "NGINX_PASS"
-        description: "include a basic auth htpasswd, leave this blank for no auth!"
-        label: "htpasswd"
-        required: false
-        type: "string"
       - variable: "FACEBOOK_ID"
         description: "The Facebook ID"
         label: "Facebook ID"

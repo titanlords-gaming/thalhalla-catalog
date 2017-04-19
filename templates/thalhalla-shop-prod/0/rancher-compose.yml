@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "thalhalla-meanshop-prod"
-  version: "0.7.8"
+  version: "0.8.1-rc"
   description: "Thalhalla E-commerce powered by Meanshop"
   uuid: thalhallaextdb-meanshop-prod-0
   minimum_rancher_version: v0.51.0
@@ -41,6 +41,61 @@ catalog:
         label: "Mongo Host"
         required: true
         default: ""
+        type: "string"
+      - variable: "NGINX_USER"
+        description: "include a basic auth user, leave this blank for no auth!"
+        label: "htuser"
+        required: false
+        type: "string"
+      - variable: "NGINX_PASS"
+        description: "include a basic auth htpasswd, leave this blank for no auth!"
+        label: "htpasswd"
+        required: false
+        type: "string"
+      - variable: "FACEBOOK_ID"
+        description: "The Facebook ID"
+        label: "Facebook ID"
+        required: false
+        type: "string"
+      - variable: "FACEBOOK_SECRET"
+        description: "The Facebook Secret"
+        label: "Facebook Secret"
+        required: false
+        type: "string"
+      - variable: "TWITTER_ID"
+        description: "The Twitter ID"
+        label: "Twitter ID"
+        required: false
+        type: "string"
+      - variable: "TWITTER_SECRET"
+        description: "The Twitter Secret"
+        label: "Twitter Secret"
+        required: false
+        type: "string"
+      - variable: "GOOGLE_ID"
+        description: "The Google ID"
+        label: "Google ID"
+        required: false
+        type: "string"
+      - variable: "GOOGLE_SECRET"
+        description: "The Google Secret"
+        label: "Google Secret"
+        required: false
+        type: "string"
+      - variable: "BRAINTREE_MERCHANT_ID"
+        description: "The Braintree Merchant ID"
+        label: "Braintree Merchant ID"
+        required: false
+        type: "string"
+      - variable: "BRAINTREE_PUBLIC_KEY"
+        description: "The Braintree Public Key"
+        label: "Braintree Public Key"
+        required: false
+        type: "string"
+      - variable: "BRAINTREE_PRIVATE_KEY"
+        description: "The Braintree Private Key"
+        label: "Braintree Private Key"
+        required: false
         type: "string"
       - variable: host_label
         label: "Host Label to Meanshop Tags"
