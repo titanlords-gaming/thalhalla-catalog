@@ -1,0 +1,27 @@
+.catalog:
+  name: Team Speak 3 dedicated server
+  version: "0.3.1"
+  description:  Team Speak 3 dedicated server in a rancher server
+  uuid: 0.1.1
+  minimum_rancher_version: 0.1.1
+  questions:
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "TS3"
+        type: "string"
+      - variable: host_label
+        label: "Host Label to Meanshop Tags"
+        description: |
+          Host label to use as Meanshop 'value' tag.
+          Example: 'teamspeak=true'
+        required: false
+        default: "public=true"
+        type: "string"
