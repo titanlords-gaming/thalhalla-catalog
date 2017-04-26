@@ -9,7 +9,7 @@ dockarmaiii:
     HOSTNAME: ${HOSTNAME}
     STEAM_GID: 233780
     IP: ${IP}
-    PORT: ${PORT}
+    PORT: ${PORT2}
     CLIENT_IP: 10.42.227.21
     CLIENT_IP2: 10.42.227.22
     CLIENT_IP3: 10.42.227.23
