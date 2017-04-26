@@ -97,7 +97,7 @@
         description: "The mods to associate with this server"
         label: "MODS"
         required: true
-        default: "@acex\;@ares"
+        default: "@acex"
         type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
