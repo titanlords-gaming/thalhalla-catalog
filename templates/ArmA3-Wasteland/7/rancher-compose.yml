@@ -91,13 +91,13 @@
         description: "The mods to associate with this server"
         label: "MODS"
         required: true
-        default: "@acex"
+        default: '@acex'
         type: "string"
       - variable: "DOCKARMAIII_SERVER_MODS"
         description: "The mods to associate with this server"
-        label: "MODS"
+        label: "SERVER_MODS"
         required: true
-        default: "@acex\;@ares"
+        default: '@acex'
         type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
