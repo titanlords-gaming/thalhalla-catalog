@@ -38,7 +38,7 @@ dockarmaiiihc1:
     STEAM_PASSWORD: ${STEAM_PASSWORD}
     STEAM_GID: 233780
     IP: ${IP}
-    PORT: ${PORT}
+    PORT: ${PORT2}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
@@ -58,7 +58,7 @@ dockarmaiiihc2:
     STEAM_PASSWORD: ${STEAM_PASSWORD}
     STEAM_GID: 233780
     IP: ${IP}
-    PORT: ${PORT}
+    PORT: ${PORT2}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
@@ -79,7 +79,7 @@ dockarmaiiihc3:
     GAME_PASSWORD: ${GAME_PASSWORD}
     STEAM_GID: 233780
     IP: ${IP}
-    PORT: ${PORT}
+    PORT: ${PORT2}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
