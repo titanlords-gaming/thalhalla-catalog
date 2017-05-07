@@ -97,7 +97,7 @@
         description: "The mods to load with this headless client"
         label: "MODS"
         required: false
-        default: "mods/\@ADR97\;mods/\@ASDGA\;"
+        default: "PDG/\@ADR97\;PDG/\@ASDGA\;"
         type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
