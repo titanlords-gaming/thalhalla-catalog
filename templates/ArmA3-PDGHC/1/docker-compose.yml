@@ -1,4 +1,4 @@
-dockarmaiiihc1:
+dockarmaiii:
   image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
   command: ${DOCKARMAIII_COMMAND}
   environment:
@@ -16,9 +16,9 @@ dockarmaiiihc1:
     GAME_PASSWORD: ${GAME_PASSWORD}
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.sidekicks: dockarmaiii-datavolume
+    io.rancher.container.pull_image: always
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiii-datavolume:
