@@ -109,7 +109,7 @@
         description: "Host label where to run this service."
         label: "Host label:"
         required: true
-        default: "bragi=true"
+        default: "public=true"
         type: "string"
 dockarmaiii:
   metadata:
