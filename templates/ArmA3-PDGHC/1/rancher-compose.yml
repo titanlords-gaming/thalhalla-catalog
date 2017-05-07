@@ -37,7 +37,7 @@
         description: "IP address to assign to the headless client"
         label: "IP"
         required: true
-        default: "4.31.168.86"
+        default: "0.0.0.0"
         type: "string"
       - variable: "PORT2"
         description: "VON PORT to associate with this headless client"
@@ -73,7 +73,7 @@
         description: "The VOLUME name to associate with this headless client"
         label: "VOLUME Name"
         required: true
-        default: "ARMA3-PDGHC"
+        default: "ARMA3_PDGHC"
         type: "string"
       - variable: "GAME_PASSWORD"
         description: "Game password to use on the target server"
