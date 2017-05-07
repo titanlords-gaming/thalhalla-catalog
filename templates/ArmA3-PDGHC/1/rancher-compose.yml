@@ -25,13 +25,19 @@
         description: "IP address for the target server (non-headless)"
         label: "SERVER_IP"
         required: true
-        default: "0.0.0.0"
+        default: "162.248.91.14"
         type: "string"
       - variable: "SERVER_PORT"
         description: "Server Port for the target server (non-headless)"
         label: "SERVER_PORT"
         required: true
         default: "2302"
+        type: "string"
+      - variable: "IP"
+        description: "IP address to assign to the headless client"
+        label: "IP"
+        required: true
+        default: "4.31.168.86"
         type: "string"
       - variable: "PORT2"
         description: "VON PORT to associate with this headless client"
@@ -79,7 +85,7 @@
         description: "The command name to associate with this headless client"
         label: "command"
         required: true
-        default: "/assets/headless.sh"
+        default: "/assets/headless-start.sh"
         type: "string"
       - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this headless client"
@@ -89,12 +95,6 @@
         type: "string"
       - variable: "DOCKARMAIII_MODS"
         description: "The mods to load with this headless client"
-        label: "MODS"
-        required: false
-        default: "@acex"
-        type: "string"
-      - variable: "DOCKARMAIII_SERVER_MODS"
-        description: "The mods to associate with this headless client (server side only)"
         label: "MODS"
         required: false
         default: "@acex"

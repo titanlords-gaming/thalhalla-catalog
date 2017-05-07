@@ -7,6 +7,7 @@ dockarmaiiihc1:
     STEAM_GID: 233780
     SERVER_IP: ${SERVER_IP}
     SERVER_PORT: ${SERVER_PORT}
+    IP: ${IP}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
