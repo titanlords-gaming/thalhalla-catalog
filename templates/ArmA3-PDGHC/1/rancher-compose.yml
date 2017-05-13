@@ -97,7 +97,7 @@
         description: "The mods to load with this headless client"
         label: "MODS"
         required: false
-        default: "PDG/@ace;PDG/@acex;PDG/@ADR97;PDG/@AdvancedUrbanRappelling;PDG/@asdg_jr;PDG/@ASDGA;PDG/@bloodlust;PDG/@CBA_A3;PDG/@DynaSound;PDG/@EM;PDG/@fhq_accessories;PDG/@FHQ_Weapons;PDG/@InconEffectsV1.2;PDG/@Lax_SS;PDG/@lsd_nvg;PDG/@mcc;PDG/@mrg_units_sfx;PDG/@mrt_accfncs;PDG/RHS/@RHSAFRF;PDG/RHS/@RHSGREF;PDG/RHS/@RHSSAF;PDG/RHS/@RHSUSAF;PDG/@RZ;PDG/@Spec4Gear;PDG/@task_force_radio;PDG/@tfw_radios;PDG/@tryk;PDG/@ULTIMATE_SOLDIER2MP;PDG/Optional/@Ares;"
+        default: "PDG/@ace;PDG/@acex;PDG/@ADR97;PDG/@asdg_jr;PDG/@ASDGA;PDG/@bloodlust;PDG/@CBA_A3;PDG/@DynaSound;PDG/@EM;PDG/@fhq_accessories;PDG/@FHQ_Weapons;PDG/@InconEffectsV1.2;PDG/@Lax_SS;PDG/@lsd_nvg;PDG/@mcc;PDG/@mrg_units_sfx;PDG/@mrt_accfncs;PDG/RHS/@RHSAFRF;PDG/RHS/@RHSGREF;PDG/RHS/@RHSSAF;PDG/RHS/@RHSUSAF;PDG/@RZ;PDG/@Spec4Gear;PDG/@task_force_radio;PDG/@tfw_radios;PDG/Optional/@Ares;"
         type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
