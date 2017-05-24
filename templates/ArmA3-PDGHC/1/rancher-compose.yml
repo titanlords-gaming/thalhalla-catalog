@@ -1,0 +1,118 @@
+.catalog:
+  name: "dockarmaiii"
+  version: "0.1.1"
+  decription: ArmA3 Headless Client for PDG
+  questions:
+      - variable: "STEAM_USERNAME"
+        description: "Username from steam to use for the headless client"
+        label: "Steam Username"
+        required: true
+        default: ""
+        type: "string"
+      - variable: "STEAM_PASSWORD"
+        description: "Password from steam to use for the headless client"
+        label: "Steam Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "STEAM_GID"
+        description: "App ID or GID from steam to use for the headless client"
+        label: "Steam Game ID"
+        required: true
+        default: "233780"
+        type: "string"
+      - variable: "SERVER_IP"
+        description: "IP address for the target server (non-headless)"
+        label: "SERVER_IP"
+        required: true
+        default: "162.248.91.14"
+        type: "string"
+      - variable: "SERVER_PORT"
+        description: "Server Port for the target server (non-headless)"
+        label: "SERVER_PORT"
+        required: true
+        default: "2302"
+        type: "string"
+      - variable: "IP"
+        description: "IP address to assign to the headless client"
+        label: "IP"
+        required: true
+        default: "0.0.0.0"
+        type: "string"
+      - variable: "PORT2"
+        description: "VON PORT to associate with this headless client"
+        label: "PORT2"
+        required: true
+        default: "2302"
+        type: "string"
+      - variable: "PORT3"
+        description: "2303 PORT to associate with this headless client"
+        label: "PORT3"
+        required: true
+        default: "2303"
+        type: "string"
+      - variable: "PORT4"
+        description: "2304 to associate with this headless client"
+        label: "PORT4"
+        required: true
+        default: "2304"
+        type: "string"
+      - variable: "PORT5"
+        description: "2305 PORT to associate with this headless client"
+        label: "PORT5"
+        required: true
+        default: "2305"
+        type: "string"
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this headless client (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this headless client"
+        label: "VOLUME Name"
+        required: true
+        default: "ARMA3_PDGHC"
+        type: "string"
+      - variable: "GAME_PASSWORD"
+        description: "Game password to use on the target server"
+        label: "Game Password"
+        required: false
+        default: "PDGOPS"
+        type: "password"
+      - variable: "DOCKARMAIII_COMMAND"
+        description: "The command name to associate with this headless client"
+        label: "command"
+        required: true
+        default: "/assets/headless-start.sh"
+        type: "string"
+      - variable: "DOCKARMAIII_BRANCH"
+        description: "The command name to associate with this headless client"
+        label: "BRANCH"
+        required: true
+        default: "latest"
+        type: "string"
+      - variable: "DOCKARMAIII_MODS"
+        description: "The mods to load with this headless client"
+        label: "MODS"
+        required: false
+        default: "PDG/@ace;PDG/@acex;PDG/@CBA_A3;PDG/@EM;PDG/@fhq_accessories;PDG/@FHQ_Weapons;PDG/@InconEffectsV1.2;PDG/@Lax_SS;PDG/@mcc;PDG/@mrg_units_sfx;PDG/@mrt_accfncs;PDG/RHS/@RHSAFRF;PDG/RHS/@RHSGREF;PDG/RHS/@RHSSAF;PDG/RHS/@RHSUSAF;PDG/@RZ;PDG/@Spec4Gear;PDG/@task_force_radio;PDG/@tfw_radios;PDG/Optional/@Ares;"
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The hostname to associate with this server"
+        label: "HOSTNAME"
+        required: true
+        default: "hc.phoenixdowngaming.com"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
+        type: "string"
+dockarmaiii:
+  metadata:
+    dockarmaiii:
+      config:
+       node.name: "$${HOSTNAME}"
