@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.1.2"
+  version: "0.1.1"
   decription: ArmA3 Headless Client for PDG
   questions:
       - variable: "STEAM_USERNAME"
@@ -67,15 +67,8 @@
         description: "The VOLUME driver to associate with this headless client (convoy-nfs,convoy-efs,convoy-ebs)"
         label: "VOLUME Driver"
         required: true
-        default: "rancher-nfs"
-        type: enum
-        options: # List of options if using type of `enum`
-          - Option rancher-nfs
-          - Option rancher-efs
-          - Option rancher-ebs
-          - Option convoy-nfs
-          - Option convoy-efs
-          - Option convoy-ebs
+        default: "convoy-nfs"
+        type: "string"
       - variable: "VOLUME_NAME"
         description: "The VOLUME name to associate with this headless client"
         label: "VOLUME Name"
