@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.1.2"
+  version: "0.1.1"
   decription: ArmA3 Headless Client for PDG
   questions:
       - variable: "STEAM_USERNAME"
