@@ -58,12 +58,12 @@
         default: "rancher-nfs"
         type: enum
         options: # List of options if using type of `enum`
-          - Option rancher-nfs
-          - Option rancher-efs
-          - Option rancher-ebs
-          - Option convoy-nfs
-          - Option convoy-efs
-          - Option convoy-ebs
+          - rancher-nfs
+          - rancher-efs
+          - rancher-ebs
+          - convoy-nfs
+          - convoy-efs
+          - convoy-ebs
       - variable: "VOLUME_NAME"
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
