@@ -1,0 +1,130 @@
+.catalog:
+  name: "dockarmaiii"
+  version: "0.2.2"
+  decription: A reliable ArmA3 Dedicated steam server
+  questions:
+      - variable: "STEAM_USERNAME"
+        description: "Username from steam to use for the server"
+        label: "Steam Username"
+        required: true
+        default: ""
+        type: "string"
+      - variable: "STEAM_PASSWORD"
+        description: "Password from steam to use for the server"
+        label: "Steam Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "STEAM_GID"
+        description: "App ID or GID from steam to use for the server"
+        label: "Steam Game ID"
+        required: true
+        default: "233780"
+        type: "string"
+      - variable: "IP"
+        description: "IP to associate with this server"
+        label: "IP"
+        required: true
+        default: "0.0.0.0"
+        type: "string"
+      - variable: "PORT2"
+        description: "VON PORT to associate with this server"
+        label: "PORT2"
+        required: true
+        default: "2302"
+        type: "string"
+      - variable: "PORT3"
+        description: "2303 PORT to associate with this server"
+        label: "PORT3"
+        required: true
+        default: "2303"
+        type: "string"
+      - variable: "PORT4"
+        description: "2304 to associate with this server"
+        label: "PORT4"
+        required: true
+        default: "2304"
+        type: "string"
+      - variable: "PORT5"
+        description: "2305 PORT to associate with this server"
+        label: "PORT5"
+        required: true
+        default: "2305"
+        type: "string"
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "ARMA3"
+        type: "string"
+      - variable: "GAME_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Game Password"
+        required: false
+        default: ""
+        type: "password"
+      - variable: "ADMIN_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Admin Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "STEAMER_FILE"
+        description: "The steamer file name"
+        label: "command"
+        required: true
+        default: "steamer.txt"
+        type: "string"
+      - variable: "DOCKARMAIII_COMMAND"
+        description: "The command name to associate with this server"
+        label: "command"
+        required: true
+        default: "/assets/valve-run.sh"
+        type: "string"
+      - variable: "DOCKARMAIII_BRANCH"
+        description: "The command name to associate with this server"
+        label: "BRANCH"
+        required: true
+        default: "latest"
+        type: "string"
+      - variable: "DOCKARMAIII_MODS"
+        description: "The mods to associate with this server"
+        label: "MODS"
+        required: false
+        default: "@acex"
+        type: "string"
+      - variable: "DOCKARMAIII_SERVER_MODS"
+        description: "The mods to associate with this server"
+        label: "MODS"
+        required: false
+        default: "@acex"
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The hostname to associate with this server"
+        label: "HOSTNAME"
+        required: true
+        default: "Thalhalla.com-247-WasteLand"
+        type: "string"
+      - variable: "MAX_PLAYERS"
+        description: "The max players to associate with this server"
+        label: "Max Players"
+        required: true
+        default: "64"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
+        type: "string"
+dockarmaiii:
+  metadata:
+    dockarmaiii:
+      config:
+       node.name: "$${HOSTNAME}"
