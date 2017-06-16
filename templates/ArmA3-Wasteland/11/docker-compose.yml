@@ -82,10 +82,10 @@ dockarmaiii-extdb:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.requested_ip: 10.42.227.23
     environment:
-      - MYSQL_USER=${WORDPRESS_DB_USER}
-      - MYSQL_PASSWORD=${WORDPRESS_DB_PASSWORD}
-      - MYSQL_ROOT_PASSWORD=${WORDPRESS_DB_PASSWORD}
-      - MYSQL_DATABASE=${WORDPRESS_DB_NAME}
+      - MYSQL_USER=${STEAM_USERNAME}
+      - MYSQL_PASSWORD=${STEAM_USERNAME}
+      - MYSQL_ROOT_PASSWORD=${STEAM_USERNAME}
+      - MYSQL_DATABASE=extdb
       - SKIP_NAME_RESOLVE=Yes
 dockarmaiii-datavolume:
   labels:
