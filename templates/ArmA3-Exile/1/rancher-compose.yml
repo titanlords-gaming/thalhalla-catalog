@@ -1,7 +1,7 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.2.2"
-  decription: A reliable ArmA3 Dedicated steam server
+  version: "0.1.2"
+  decription: ARMA3 Exile Dedicated Server
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -27,27 +27,27 @@
         required: true
         default: "0.0.0.0"
         type: "string"
-      - variable: "PORT2"
+      - variable: "PORT"
         description: "VON PORT to associate with this server"
-        label: "PORT2"
+        label: "PORT"
         required: true
         default: "2302"
         type: "string"
-      - variable: "PORT3"
-        description: "2303 PORT to associate with this server"
-        label: "PORT3"
+      - variable: "PORT2"
+        description: "Secondary Game PORT to associate with this server (gameport+1)"
+        label: "PORT2"
         required: true
         default: "2303"
         type: "string"
-      - variable: "PORT4"
-        description: "2304 to associate with this server"
-        label: "PORT4"
+      - variable: "PORT3"
+        description: "Tertiary Game PORT to associate with this server (gameport+2)"
+        label: "PORT3"
         required: true
         default: "2304"
         type: "string"
-      - variable: "PORT5"
-        description: "2305 PORT to associate with this server"
-        label: "PORT5"
+      - variable: "PORT4"
+        description: "Tertiary Game PORT to associate with this server (gameport+3)"
+        label: "PORT4"
         required: true
         default: "2305"
         type: "string"
@@ -68,7 +68,7 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "ARMA3"
+        default: "ARMA3EXILE"
         type: "string"
       - variable: "GAME_PASSWORD"
         description: "Admin Password to use for the server"
@@ -82,12 +82,6 @@
         required: true
         default: ""
         type: "password"
-      - variable: "STEAMER_FILE"
-        description: "The steamer file name"
-        label: "command"
-        required: true
-        default: "steamer.txt"
-        type: "string"
       - variable: "DOCKARMAIII_COMMAND"
         description: "The command name to associate with this server"
         label: "command"
@@ -104,19 +98,19 @@
         description: "The mods to associate with this server"
         label: "MODS"
         required: false
-        default: "@acex"
+        default: ""
         type: "string"
-      - variable: "DOCKARMAIII_SERVER_MODS"
-        description: "The mods to associate with this server"
-        label: "MODS"
-        required: false
-        default: "@acex"
+      - variable: "DOCKARMAIII_SERVERMODS"
+        description: "The server side only mods to associate with this server"
+        label: "SERVERMODS"
+        required: true
+        default: "@ExileServer"
         type: "string"
       - variable: "HOSTNAME"
         description: "The hostname to associate with this server"
         label: "HOSTNAME"
         required: true
-        default: "Thalhalla.com-247-WasteLand"
+        default: "Thalhalla.com-247-Exile"
         type: "string"
       - variable: "MAX_PLAYERS"
         description: "The max players to associate with this server"
