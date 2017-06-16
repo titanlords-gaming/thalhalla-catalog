@@ -85,7 +85,7 @@ dockarmaiii-extdb:
       - MYSQL_USER=${STEAM_USERNAME}
       - MYSQL_PASSWORD=${STEAM_USERNAME}
       - MYSQL_ROOT_PASSWORD=${STEAM_USERNAME}
-      - MYSQL_DATABASE=extdb
+      - MYSQL_DATABASE=a3wasteland
       - SKIP_NAME_RESOLVE=Yes
 dockarmaiii-datavolume:
   labels:
