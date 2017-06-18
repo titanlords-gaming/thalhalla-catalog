@@ -130,6 +130,26 @@
         required: true
         default: "public=true"
         type: "string"
+      - variable: "EXTDB_HOST"
+        description: "The IP/Hostname of your ExtDB(MySQL) server"
+        label: "ExtDB Host"
+        required: true
+        default: ""
+      - variable: "EXTDB_USERNAME"
+        description: "The user for your ExtDB(MySQL) server"
+        label: "ExtDB Username"
+        required: true
+        default: ""
+      - variable: "EXTDB_PASSWORD"
+        description: "The password for your ExtDB(MySQL) server"
+        label: "ExtDB Password"
+        required: true
+        default: ""
+      - variable: "EXTDB_PORT"
+        description: "The port for your ExtDB(MySQL) server"
+        label: "ExtDB Port"
+        required: true
+        default: "3306"
 dockarmaiii-wasteland:
   metadata:
     dockarmaiii-wasteland:
