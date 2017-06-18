@@ -1,0 +1,18 @@
+version: '2'
+services:
+  thalhallashop-todomvc:
+    image: ${TODOMVC_TAG}
+    labels:
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
+      traefik.enable: true
+      traefik.alias: ${TODOMVC_HOST}
+      traefik.domain: ${TODOMVC_DOMAIN}
+      traefik.acme: true
+      traefik.port: 80
+    environment:
+      NGINX_HOST: ${TODOMVC_HOST}.${TODOMVC_DOMAIN}
+      NGINX_PORT: 80
+      NGINX_USER: ${TODOMVC_USER}
+      NGINX_PASS: ${TODOMVC_PASS}

@@ -68,7 +68,7 @@
         description: "The VOLUME name to associate with this server"
         label: "VOLUME Name"
         required: true
-        default: "ARMA3"
+        default: "ARMA3WASTELAND"
         type: "string"
       - variable: "GAME_PASSWORD"
         description: "Admin Password to use for the server"

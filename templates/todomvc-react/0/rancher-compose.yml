@@ -1,0 +1,51 @@
+version: '2'
+catalog:
+  name: "thalhalla-todomvc"
+  version: "0.1.1"
+  description: "Thalhalla ToDo list powered by TodoMVC (react-backbone)"
+  uuid: thalhallatodomvc-0-1
+  minimum_rancher_version: v0.51.0
+  questions:
+      - variable: "TODOMVC_HOST"
+        description: "Hostname to use for the Thalhalla TodoMVC list"
+        label: "Thalhalla TodoMVC Hostname"
+        required: true
+        default: "todomvc"
+        type: "string"
+      - variable: "TODOMVC_DOMAIN"
+        description: "Domain to use for the Thalhalla store server"
+        label: "TODOMVC Domain"
+        required: true
+        default: "thalhalla.net"
+        type: "string"
+      - variable: "TODOMVC_TAG"
+        description: "The Docker Tag for the Thalhalla TodoMVC server"
+        label: "nginx tag"
+        required: true
+        default: "thalhalla/todomvc:react-backbone"
+        type: "string"
+      - variable: "TODOMVC_DEBUG"
+        description: "include debug data in stdout"
+        label: "debug"
+        required: false
+        default: "debug=true"
+        type: "string"
+      - variable: host_label
+        label: "Host Label to TodoMVC Tags"
+        description: |
+          Host label to use as TodoMVC 'value' tag.
+          Example: 'thalhallatodomvc=true'
+        required: false
+        default: "private=true"
+        type: "string"
+services:
+  thalhallashop-todomvc:
+    scale: 1
+    health_check:
+      port: 80
+      interval: 30000
+      initializing_timeout: 360000
+      unhealthy_threshold: 9
+      strategy: none
+      healthy_threshold: 2
+      response_timeout: 9000
