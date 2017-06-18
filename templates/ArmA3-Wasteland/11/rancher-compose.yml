@@ -1,6 +1,6 @@
 .catalog:
-  name: "dockarmaiii"
-  version: "0.2.2"
+  name: "dockarmaiii-wasteland"
+  version: "0.2.3"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
@@ -130,8 +130,8 @@
         required: true
         default: "public=true"
         type: "string"
-dockarmaiii:
+dockarmaiii-wasteland:
   metadata:
-    dockarmaiii:
+    dockarmaiii-wasteland:
       config:
        node.name: "$${HOSTNAME}"

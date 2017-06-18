@@ -46,6 +46,7 @@ dockarmaiiihc1:
     PORT5: ${PORT5}
     SERVER_IP: 10.42.227.27
     SERVER_PORT: 2302
+    HEADLESS_CLIENT: true
   labels:
     io.rancher.container.requested_ip: 10.42.227.21
     io.rancher.sidekicks: dockarmaiii-datavolume
@@ -66,6 +67,7 @@ dockarmaiiihc2:
     PORT5: ${PORT5}
     SERVER_IP: 10.42.227.27
     SERVER_PORT: 2302
+    HEADLESS_CLIENT: true
   labels:
     io.rancher.container.requested_ip: 10.42.227.22
     io.rancher.sidekicks: dockarmaiii-datavolume
@@ -94,5 +96,5 @@ dockarmaiii-datavolume:
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
-  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
+  image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_BRANCH}
   command: /bin/true
