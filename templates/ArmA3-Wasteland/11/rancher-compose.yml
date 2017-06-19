@@ -94,9 +94,9 @@
         required: true
         default: "/assets/controller.sh"
         type: "string"
-      - variable: "DOCKARMAIII_BRANCH"
+      - variable: "DOCKARMAIII_TAG"
         description: "The command name to associate with this server"
-        label: "BRANCH"
+        label: "TAG"
         required: true
         default: "latest"
         type: "string"

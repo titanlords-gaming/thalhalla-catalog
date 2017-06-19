@@ -1,5 +1,5 @@
 dockarmaiii:
-  image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_BRANCH}
+  image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_TAG}
   command: ${DOCKARMAIII_COMMAND}
   environment:
     STEAM_USERNAME: ${STEAM_USERNAME}
@@ -32,7 +32,7 @@ dockarmaiii:
     - "${PORT4}:2304/udp"
     - "${PORT5}:2305/udp"
 dockarmaiiihc1:
-  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
+  image: thalhalla/dockarmaiii:latest
   command: /assets/headless.sh
   environment:
     STEAM_USERNAME: ${STEAM_USERNAME}
@@ -53,7 +53,7 @@ dockarmaiiihc1:
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiiihc2:
-  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
+  image: thalhalla/dockarmaiii:latest
   command: /assets/headless.sh
   environment:
     STEAM_USERNAME: ${STEAM_USERNAME}
@@ -96,5 +96,5 @@ dockarmaiii-datavolume:
   volume_driver: ${VOLUME_DRIVER}
   volumes:
     - ${VOLUME_NAME}:/home/steam
-  image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_BRANCH}
+  image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_TAG}
   command: /bin/true
