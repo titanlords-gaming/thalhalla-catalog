@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii-wasteland"
-  version: "0.2.4"
+  version: "0.2.5"
   decription: A reliable ArmA3 Dedicated steam server
   questions:
       - variable: "STEAM_USERNAME"
