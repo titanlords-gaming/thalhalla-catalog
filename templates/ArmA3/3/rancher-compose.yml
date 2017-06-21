@@ -50,7 +50,7 @@
         description: "The command name to associate with this server"
         label: "command"
         required: true
-        default: "/assets/valve-run.sh"
+        default: "/assets/controller.sh"
         type: "string"
       - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
