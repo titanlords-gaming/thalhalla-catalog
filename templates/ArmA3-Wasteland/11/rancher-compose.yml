@@ -159,8 +159,6 @@ catalog:
         type: "string"
 services:
   dockarmaiii-wasteland:
-    config:
-     node.name: "$${HOSTNAME}"
     scale: 1
     health_check:
       port: 80
