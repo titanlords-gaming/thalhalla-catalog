@@ -1,6 +1,6 @@
 version: '2'
 services:
-  dockarmaiii:
+  dockarmaiii-wasteland:
     image: thalhalla/dockarmaiii-wasteland:${DOCKARMAIII_TAG}
     command: ${DOCKARMAIII_COMMAND}
     environment:
