@@ -172,5 +172,7 @@ services:
     scale: 1
   dockarmaiiihc2:
     scale: 1
+  dockarmaiii-extdb:
+    scale: 1
   dockarmaiii-datavolume:
     scale: 1
