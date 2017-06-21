@@ -35,7 +35,7 @@ services:
       - "${PORT5}:2305/udp"
   dockarmaiiihc1:
     image: thalhalla/dockarmaiii:latest
-    command: /assets/headless.sh
+    command: /assets/controller.sh
     environment:
       STEAM_USERNAME: ${STEAM_USERNAME}
       STEAM_PASSWORD: ${STEAM_PASSWORD}
@@ -56,7 +56,7 @@ services:
       - dockarmaiii-datavolume
   dockarmaiiihc2:
     image: thalhalla/dockarmaiii:latest
-    command: /assets/headless.sh
+    command: /assets/controller.sh
     environment:
       STEAM_USERNAME: ${STEAM_USERNAME}
       STEAM_PASSWORD: ${STEAM_PASSWORD}
