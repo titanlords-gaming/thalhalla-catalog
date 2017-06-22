@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "dockarmaiii-wasteland"
-  version: "0.2.6"
+  version: "0.2.7"
   decription: A reliable ArmA3 Dedicated steam server
   uuid: thalhalla-wasteland-0
   minimum_rancher_version: v0.51.0
@@ -111,7 +111,7 @@ catalog:
         type: "string"
       - variable: "DOCKARMAIII_SERVER_MODS"
         description: "The mods to associate with this server"
-        label: "MODS"
+        label: "SERVERMODS"
         required: false
         default: "@acex"
         type: "string"
