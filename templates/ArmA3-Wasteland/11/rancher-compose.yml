@@ -1,7 +1,10 @@
-.catalog:
+version: '2'
+catalog:
   name: "dockarmaiii-wasteland"
-  version: "0.2.5"
+  version: "0.2.7"
   decription: A reliable ArmA3 Dedicated steam server
+  uuid: thalhalla-wasteland-0
+  minimum_rancher_version: v0.51.0
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -108,7 +111,7 @@
         type: "string"
       - variable: "DOCKARMAIII_SERVER_MODS"
         description: "The mods to associate with this server"
-        label: "MODS"
+        label: "SERVERMODS"
         required: false
         default: "@acex"
         type: "string"
@@ -154,8 +157,22 @@
         required: true
         default: "3306"
         type: "string"
-dockarmaiii-wasteland:
-  metadata:
-    dockarmaiii-wasteland:
-      config:
-       node.name: "$${HOSTNAME}"
+services:
+  dockarmaiii-wasteland:
+    scale: 1
+    health_check:
+      port: 80
+      interval: 30000
+      initializing_timeout: 360000
+      unhealthy_threshold: 9
+      strategy: none
+      healthy_threshold: 2
+      response_timeout: 9000
+  dockarmaiiihc1:
+    scale: 1
+  dockarmaiiihc2:
+    scale: 1
+  dockarmaiii-extdb:
+    scale: 1
+  dockarmaiii-datavolume:
+    scale: 1
