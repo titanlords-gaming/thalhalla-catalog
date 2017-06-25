@@ -1,7 +1,7 @@
 name: Traefik-Thalhalla
 description: |
   Traefik active load balancer with Thalhalla defaults
-version: v1.2.3-rancher1-thalhall-2
+version: v1.2.3-rancher1-thalhall-3
 category: Load Balancing
 maintainer: "Josh Cox <josh@webhosting.coop>"
 minimum_rancher_version: v0.59.0

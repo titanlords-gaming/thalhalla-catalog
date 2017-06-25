@@ -12,7 +12,7 @@ traefik:
     io.rancher.container.hostname_override: container_name
   tty: true
   log_opt: {}
-  image: rawmind/alpine-traefik:1.1.2-1
+  image: rawmind/alpine-traefik:1.2.3-1
   environment:
   - CONF_INTERVAL=${refresh_interval}
   - TRAEFIK_HTTP_PORT=${http_port}
@@ -22,8 +22,12 @@ traefik:
   - TRAEFIK_ACME_EMAIL=${acme_email}
   - TRAEFIK_ACME_ONDEMAND=${acme_ondemand}
   - TRAEFIK_ACME_ONHOSTRULE=${acme_onhostrule}
+  - TRAEFIK_INSECURE_SKIP=${insecure_skip}
   volumes_from:
   - traefik-conf
+  volume_driver: ${VOLUME_DRIVER}
+  volumes:
+    - ${VOLUME_NAME}:/opt/traefik/acme
 traefik-conf:
   log_driver: ''
   labels:
