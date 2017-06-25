@@ -25,6 +25,9 @@ traefik:
   - TRAEFIK_INSECURE_SKIP=${insecure_skip}
   volumes_from:
   - traefik-conf
+  volume_driver: ${VOLUME_DRIVER}
+  volumes:
+    - ${VOLUME_NAME}:/opt/traefik/acme
 traefik-conf:
   log_driver: ''
   labels:
