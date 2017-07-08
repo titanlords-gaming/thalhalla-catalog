@@ -4,29 +4,32 @@ dockarmaiii:
   environment:
     STEAM_USERNAME: ${STEAM_USERNAME}
     STEAM_PASSWORD: ${STEAM_PASSWORD}
+    ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+    HOSTNAME: ${HOSTNAME}
+    MAX_PLAYERS: ${MAX_PLAYERS}
     STEAM_GID: 233780
-    SERVER_IP: ${SERVER_IP}
-    SERVER_PORT: ${SERVER_PORT}
-    IP: ${IP}
+    IP: 0.0.0.0
+    PORT: ${PORT2}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
     PORT5: ${PORT5}
     MODS: ${DOCKARMAIII_MODS}
-    GAME_PASSWORD: ${GAME_PASSWORD}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:host_label: ${host_label}
     io.rancher.sidekicks: dockarmaiii-datavolume
     io.rancher.container.pull_image: always
-  volumes_from:
-    - dockarmaiii-datavolume
-dockarmaiii-datavolume:
-  labels:
-    io.rancher.container.hostname_override: container_name
-    io.rancher.container.start_once: true
-  volume_driver: ${VOLUME_DRIVER}
+  ports:
+    - "${PORT2}:${PORT2}/udp"
+    - "${PORT3}:${PORT3}/udp"
+    - "${PORT4}:${PORT4}/udp"
+    - "${PORT5}:${PORT5}/udp"
   volumes:
-    - ${VOLUME_NAME}:/home/steam
-  image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
-  command: /bin/true
+    - dockarmaiiiconfig:/home/steam
+    - dockarmaiiidata:/data
+volumes:
+  dockarmaiiiconfig:
+    driver: ${VOLUME_DRIVER}
+  dockarmaiiidata:
+    driver: ${VOLUME_DRIVER}

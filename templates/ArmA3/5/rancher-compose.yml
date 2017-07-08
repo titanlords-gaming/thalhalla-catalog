@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: "0.4.4"
+  version: 0.4.6
   decription: A reliable ArmA3 Dedicated steam server (Valve method)
   questions:
       - variable: "STEAM_USERNAME"
@@ -21,11 +21,29 @@
         required: true
         default: ""
         type: "password"
-      - variable: "PORT"
+      - variable: "PORT2"
         description: "main PORT to associate with this server"
-        label: "PORT"
+        label: "PORT2"
         required: true
         default: "2302"
+        type: "string"
+      - variable: "PORT3"
+        description: "secondary PORT to associate with this server"
+        label: "PORT3"
+        required: true
+        default: "2303"
+        type: "string"
+      - variable: "PORT4"
+        description: "secondary PORT to associate with this server"
+        label: "PORT4"
+        required: true
+        default: "2304"
+        type: "string"
+      - variable: "PORT5"
+        description: "secondary PORT to associate with this server"
+        label: "PORT5"
+        required: true
+        default: "2305"
         type: "string"
       - variable: "VOLUME_DRIVER"
         description: "The VOLUME driver to associate with this server"
@@ -37,20 +55,11 @@
           - rancher-nfs
           - rancher-efs
           - rancher-ebs
-          - convoy-nfs
-          - convoy-efs
-          - convoy-ebs
-      - variable: "VOLUME_NAME"
-        description: "The VOLUME name to associate with this server"
-        label: "VOLUME Name"
-        required: true
-        default: "ARMA3"
-        type: "string"
       - variable: "DOCKARMAIII_COMMAND"
         description: "The command name to associate with this server"
         label: "command"
         required: true
-        default: "/assets/controller.sh"
+        default: "/assets/dockarmaiii"
         type: "string"
       - variable: "DOCKARMAIII_BRANCH"
         description: "The command name to associate with this server"
