@@ -13,7 +13,6 @@ dockarmaiii:
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
-    PORT5: ${PORT5}
     MODS: ${DOCKARMAIII_MODS}
   labels:
     io.rancher.container.hostname_override: container_name
@@ -25,7 +24,6 @@ dockarmaiii:
     - "${PORT2}:${PORT2}/udp"
     - "${PORT3}:${PORT3}/udp"
     - "${PORT4}:${PORT4}/udp"
-    - "${PORT5}:${PORT5}/udp"
   volumes_from:
     - dockarmaiii-datavolume
 dockarmaiii-datavolume:

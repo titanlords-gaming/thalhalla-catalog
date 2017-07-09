@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: 0.11.2
+  version: 0.11.3
   decription: A reliable ArmA3 Dedicated steam server (Valve method)
   questions:
       - variable: "STEAM_USERNAME"
@@ -21,27 +21,27 @@
         required: true
         default: ""
         type: "password"
-      - variable: "PORT2"
-        description: "main PORT to associate with this server"
-        label: "PORT2"
+      - variable: "PORT"
+        description: "Primary PORT to associate with this server"
+        label: "PORT"
         required: true
         default: "2302"
         type: "string"
-      - variable: "PORT3"
-        description: "secondary PORT to associate with this server"
-        label: "PORT3"
+      - variable: "PORT2"
+        description: "2nd PORT to associate with this server"
+        label: "PORT2"
         required: true
         default: "2303"
         type: "string"
-      - variable: "PORT4"
-        description: "secondary PORT to associate with this server"
-        label: "PORT4"
+      - variable: "PORT3"
+        description: "3rd PORT to associate with this server"
+        label: "PORT3"
         required: true
         default: "2304"
         type: "string"
-      - variable: "PORT5"
-        description: "secondary PORT to associate with this server"
-        label: "PORT5"
+      - variable: "PORT4"
+        description: "4th PORT to associate with this server"
+        label: "PORT4"
         required: true
         default: "2305"
         type: "string"
