@@ -9,7 +9,7 @@ dockarmaiii:
     MAX_PLAYERS: ${MAX_PLAYERS}
     STEAM_GID: 233780
     IP: 0.0.0.0
-    PORT: ${PORT2}
+    PORT: ${PORT}
     PORT2: ${PORT2}
     PORT3: ${PORT3}
     PORT4: ${PORT4}
@@ -21,6 +21,7 @@ dockarmaiii:
     io.rancher.sidekicks: dockarmaiii-datavolume
     io.rancher.container.pull_image: always
   ports:
+    - "${PORT}:${PORT}/udp"
     - "${PORT2}:${PORT2}/udp"
     - "${PORT3}:${PORT3}/udp"
     - "${PORT4}:${PORT4}/udp"
