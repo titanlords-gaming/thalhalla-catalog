@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii-tagged"
-  version: 0.12.0-1
+  version: 0.12.0-1-release
   decription: A reliable ArmA3 Dedicated steam server (Valve method)
   questions:
       - variable: "STEAM_USERNAME"
