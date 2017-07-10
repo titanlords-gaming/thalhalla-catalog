@@ -14,7 +14,9 @@ dockarmaiii:
     PORT3: ${PORT3}
     PORT4: ${PORT4}
     MODS: ${DOCKARMAIII_MODS}
+    BUILD_ENABLED: ${BUILD_ENABLED}
     WASTELAND_ENABLED: ${WASTELAND_ENABLED}
+    OVERWATCH_ENABLED: ${OVERWATCH_ENABLED}
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:host_label: ${host_label}
