@@ -1,7 +1,7 @@
 .catalog:
   name: "dockarmaiii"
-  version: 0.14.0-Halvar_Rackesh-3.1
-  decription: A reliable ArmA3 Dedicated steam server 0.14.0 Halvar Rackesh (docker-compose 3.1)
+  version: 0.14.0-HalvarRackesh
+  decription: A reliable ArmA3 Dedicated steam server (config directory is created on the fly in this version)
   questions:
       - variable: "STEAM_USERNAME"
         description: "Username from steam to use for the server"
@@ -71,7 +71,7 @@
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
-        default: "0.14.0"
+        default: "latest"
         type: "string"
       - variable: "HOSTNAME"
         description: "The name to associate with this server"

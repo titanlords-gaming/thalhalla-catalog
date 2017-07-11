@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "dockarmaiii"
-  version: 0.14.0-Halvar_Rackesh-3.1-4
+  version: 0.14.0-3.1-4
   decription: A reliable ArmA3 Dedicated steam server 0.14.0 Halvar Rackesh (docker-compose 3.1)
   questions:
       - variable: "STEAM_USERNAME"

@@ -1,4 +1,4 @@
-version: "3"
+version: '2'
 services:
   dockarmaiii:
     image: thalhalla/dockarmaiii:${DOCKARMAIII_BRANCH}
@@ -31,10 +31,18 @@ services:
       - "${PORT4}:${PORT4}/udp"
     volumes:
       - dockarmaiiiconfig:/home/steam
-      - dockarmaiiidata:/data
+    volumes_from:
+      - dockarmaiii-datavolume
+  dockarmaiii-datavolume:
+    labels:
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+      io.rancher.container.start_once: true
+      io.rancher.container.pull_image: always
+    volume_driver: ${VOLUME_DRIVER}
+    volumes:
+      - ${DATA_VOLUME_NAME}:/data
+    image: busybox
+    command: /bin/true
 volumes:
   dockarmaiiiconfig:
     driver: ${VOLUME_DRIVER}
-  dockarmaiiidata:
-    external:
-      name: ${DATA_VOLUME_NAME}
