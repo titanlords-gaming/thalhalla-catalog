@@ -1,6 +1,6 @@
 .catalog:
   name: "dockarmaiii"
-  version: 0.14.0-HalvarRackesh
+  version: 0.15.0
   decription: A reliable ArmA3 Dedicated steam server (config directory is created on the fly in this version)
   questions:
       - variable: "STEAM_USERNAME"
@@ -71,7 +71,7 @@
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
-        default: "0.14.0"
+        default: "latest"
         type: "string"
       - variable: "HOSTNAME"
         description: "The name to associate with this server"
