@@ -71,7 +71,7 @@
         description: "The command name to associate with this server"
         label: "BRANCH"
         required: true
-        default: "latest"
+        default: "0.14.0"
         type: "string"
       - variable: "HOSTNAME"
         description: "The name to associate with this server"
