@@ -36,5 +36,5 @@ volumes:
   dockarmaiiiconfig:
     driver: ${VOLUME_DRIVER}
   dockarmaiiidata:
-    external: ${VOLUME_DRIVER}
+    external:
       name: ${DATA_VOLUME_NAME}
