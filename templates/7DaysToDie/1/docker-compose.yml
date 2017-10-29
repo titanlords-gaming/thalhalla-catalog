@@ -20,7 +20,6 @@ services:
       MODS: ${7DAYSTODIE_MODS}
     labels:
       io.rancher.container.hostname_override: container_name
-      io.rancher.sidekicks: 7daystodie-datavolume
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.pull_image: always
     volumes:
