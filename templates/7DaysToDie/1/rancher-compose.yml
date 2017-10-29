@@ -70,12 +70,6 @@ catalog:
         required: true
         default: "convoy-nfs"
         type: "string"
-      - variable: "VOLUME_NAME"
-        description: "The VOLUME name to associate with this server"
-        label: "VOLUME Name"
-        required: true
-        default: "7DAYSTODIE"
-        type: "string"
       - variable: "GAME_PASSWORD"
         description: "Game Password to use for the server"
         label: "Game Password"
