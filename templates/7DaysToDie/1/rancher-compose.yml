@@ -1,0 +1,131 @@
+version: '2'
+catalog:
+  name: "7daystodie"
+  version: "0.1.5"
+  decription: A reliable 7 Days To Die Dedicated server
+  questions:
+      - variable: "STEAM_USERNAME"
+        description: "Username from steam to use for the server"
+        label: "Steam Username"
+        required: true
+        default: ""
+        type: "string"
+      - variable: "STEAM_PASSWORD"
+        description: "Password from steam to use for the server"
+        label: "Steam Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "STEAM_GID"
+        description: "App ID or GID from steam to use for the server"
+        label: "Steam Game ID"
+        required: true
+        default: "294420"
+        type: "string"
+      - variable: "STEAM_FORCE_INSTALL"
+        description: "force_install_dir for steamer.txt indicating where to install the game files"
+        label: "Steam Force Install Dir"
+        required: true
+        default: "/home/steam/7DaysToDie"
+        type: "string"
+      - variable: "IP"
+        description: "IP to associate with this server"
+        label: "IP"
+        required: true
+        default: "0.0.0.0"
+        type: "string"
+      - variable: "PORT"
+        description: "Game PORT to associate with this server"
+        label: "PORT"
+        required: true
+        default: "26900"
+        type: "string"
+      - variable: "PORT2"
+        description: "Secondary Game PORT to associate with this server (gameport+1)"
+        label: "PORT2"
+        required: true
+        default: "26901"
+        type: "string"
+      - variable: "PORT3"
+        description: "Tertiary Game PORT to associate with this server (gameport+2)"
+        label: "PORT3"
+        required: true
+        default: "26902"
+        type: "string"
+      - variable: "CPORT1"
+        description: "Control Panel PORT for telnet access"
+        label: "CPORT1"
+        required: true
+        default: "8088"
+        type: "string"
+      - variable: "CPORT2"
+        description: "Secondary Control Panel PORT for telnet access"
+        label: "CPORT2"
+        required: true
+        default: "8089"
+        type: "string"
+      - variable: "VOLUME_DRIVER"
+        description: "The VOLUME driver to associate with this server (convoy-nfs,convoy-efs,convoy-ebs)"
+        label: "VOLUME Driver"
+        required: true
+        default: "convoy-nfs"
+        type: "string"
+      - variable: "VOLUME_NAME"
+        description: "The VOLUME name to associate with this server"
+        label: "VOLUME Name"
+        required: true
+        default: "7DAYSTODIE"
+        type: "string"
+      - variable: "GAME_PASSWORD"
+        description: "Game Password to use for the server"
+        label: "Game Password"
+        required: false
+        default: ""
+        type: "password"
+      - variable: "ADMIN_PASSWORD"
+        description: "Admin Password to use for the server"
+        label: "Admin Password"
+        required: true
+        default: ""
+        type: "password"
+      - variable: "7DAYSTODIE_COMMAND"
+        description: "The command name to associate with this server"
+        label: "command"
+        required: true
+        default: "/assets/valve-run.sh"
+        type: "string"
+      - variable: "7DAYSTODIE_BRANCH"
+        description: "The command name to associate with this server"
+        label: "BRANCH"
+        required: true
+        default: "latest"
+        type: "string"
+      - variable: "7DAYSTODIE_MODS"
+        description: "The mods to associate with this server"
+        label: "MODS"
+        required: false
+        default: ""
+        type: "string"
+      - variable: "HOSTNAME"
+        description: "The hostname to associate with this server"
+        label: "HOSTNAME"
+        required: true
+        default: "Thalhalla.com-247-Rand-PVP"
+        type: "string"
+      - variable: "MAX_PLAYERS"
+        description: "The max players to associate with this server"
+        label: "Max Players"
+        required: true
+        default: "64"
+        type: "string"
+      - variable: "host_label"
+        description: "Host label where to run this service."
+        label: "Host label:"
+        required: true
+        default: "public=true"
+        type: "string"
+7daystodie:
+  metadata:
+    7daystodie:
+      config:
+       node.name: "$${HOSTNAME}"
