@@ -1,0 +1,38 @@
+version: '2'
+services:
+  7daystodie:
+    image: thalhalla/7daystodie:${7DAYSTODIE_BRANCH}
+    command: ${7DAYSTODIE_COMMAND}
+    environment:
+      STEAM_USERNAME: ${STEAM_USERNAME}
+      STEAM_PASSWORD: ${STEAM_PASSWORD}
+      STEAM_FORCE_INSTALL: ${STEAM_FORCE_INSTALL}
+      MAX_PLAYERS: ${MAX_PLAYERS}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      HOSTNAME: ${HOSTNAME}
+      STEAM_GID: ${STEAM_GID}
+      IP: ${IP}
+      PORT: ${PORT}
+      PORT2: ${PORT2}
+      PORT3: ${PORT3}
+      CPORT1: ${CPORT1}
+      CPORT2: ${CPORT2}
+      MODS: ${7DAYSTODIE_MODS}
+    labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+      io.rancher.container.pull_image: always
+    volumes:
+      - 7dtd:/home/steam
+    ports:
+      - "${PORT}:26900"
+      - "${PORT}:26900/udp"
+      - "${PORT2}:26901"
+      - "${PORT2}:26901/udp"
+      - "${PORT3}:26902"
+      - "${PORT3}:26902/udp"
+      - "${CPORT1}:8088"
+      - "${CPORT2}:8089"
+volumes:
+  7dtd:
+    driver: ${VOLUME_DRIVER}
