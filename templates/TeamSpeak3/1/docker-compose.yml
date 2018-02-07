@@ -1,5 +1,5 @@
 ts3:
-  image: devalx/docker-teamspeak3:latest
+  image: teamspeak:latest
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:host_label: ${host_label}
